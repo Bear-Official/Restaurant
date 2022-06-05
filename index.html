@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <title>Restaurant</title>
@@ -7,11 +7,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-
     <header class="header">
         <div class="container">
             <div class="header--right">
@@ -33,20 +33,55 @@
                         <a href="tel:+7(917) 510-57-59" class="header__tel--link">+7 (917) 510-57-59</a>
                     </div>
                 </div>
-                <div class="header__end">
-                    <div class="header__cart">
-                        <span class="header__cart--title">Корзина</span>
-                        <div class="header__border"></div>
-                        <div class="header__block">
-                            <span class="header__cart--count">4</span>
-                        </div>
+                <div class="header__cart">
+                    <span class="header__cart--title">Корзина</span>
+                    <div class="header__border"></div>
+                    <div class="header__block">
+                        <span class="header__cart--count">4</span>
                     </div>
                 </div>
             </div>
-
         </div>
     </header>
-
+    <div class="slider">
+        <div class="slider--container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <p class="slider__description">
+                            Доставка ВКУСНЕЙШИХ <br> БЛЮд за 60 минут
+                        </p>
+                        <div class="slider__box">
+                            <span class="slider__info">Ещё не пробовал?</span>
+                        </div>
+                        <img src="../images/first-slider-img.jpg" class="slider__img" alt="slider">
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="slider__description">
+                            Доставка ВКУСНЕЙШИХ <br> БЛЮд за 60 минут
+                        </p>
+                        <div class="slider__box">
+                            <span class="slider__info">Ещё не пробовал?</span>
+                        </div>
+                        <img src="../images/first-slider-img.jpg" class="slider__img" alt="slider">
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="slider__description">
+                            Доставка ВКУСНЕЙШИХ <br> БЛЮд за 60 минут
+                        </p>
+                        <div class="slider__box">
+                            <span class="slider__info">Ещё не пробовал?</span>
+                        </div>
+                        <img src="../images/first-slider-img.jpg" class="slider__img" alt="slider">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="javascript/swiper-bundle.min.js"></script>
     <script src="javascript/main.min.js"></script>
 </body>
 
