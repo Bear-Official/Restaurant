@@ -3,6 +3,7 @@
 @import "reset";
 @import "libs";
 @import "global";
+@import "media";
 
 .header {
     padding-top: 37px;
@@ -167,7 +168,7 @@
         text-align: center;
         color: #ffffff;
         top: 72px;
-        left: 120px;
+        left: 300px;
     }
 
     &__info {
@@ -190,14 +191,13 @@
         background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
         transform: rotate(-8.02deg);
         bottom: 189px;
-        left: 291px;
+        left: 490px;
     }
 }
 
 .swiper {
     position: relative;
     width: 100%;
-    // height: 484px;
     object-fit: cover;
 }
 
@@ -205,4 +205,35 @@
     width: 1920px;
     height: 484px;
     margin: 0 auto;
+}
+
+.snacks {
+    padding-top: 27px;
+    padding-bottom: 30px;
+    background: linear-gradient(360deg, #211f20 0%, #44403f 100%);
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__links {
+        position: relative;
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #cfcfcf;
+    }
+
+    .snacks__links:hover {
+        color: white;
+    }
+
+    .snacks__links:focus {
+        padding-bottom: 26px;
+        border-width: 153px;
+        border-bottom: 3px solid #618967;
+    }
 }
