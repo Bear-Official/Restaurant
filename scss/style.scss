@@ -18,7 +18,7 @@
     }
 
     &__title {
-        font-family: "Gilroy-bold";
+        font-family: "Gilroy";
         font-style: normal;
         font-weight: 700;
         font-size: 25px;
@@ -91,7 +91,7 @@
 
     &__tel--link {
         display: block;
-        font-family: "Gilroy-bold";
+        font-family: "Gilroy-ExtraBold";
         color: white;
     }
 
@@ -207,6 +207,10 @@
     margin: 0 auto;
 }
 
+.snacks--wrapper {
+    min-width: 0;
+}
+
 .snacks {
     padding-top: 27px;
     padding-bottom: 30px;
@@ -231,9 +235,183 @@
         color: white;
     }
 
-    .snacks__links:focus {
+    .snacks__links:hover {
         padding-bottom: 26px;
         border-width: 153px;
         border-bottom: 3px solid #618967;
+    }
+}
+
+.cold__snacks {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: linear-gradient(360deg, #211f20 0%, #44403f 100%);
+
+    &__title {
+        position: relative;
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding-left: 19px;
+        margin-bottom: 50px;
+    }
+
+    .cold__snacks__title::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 33px;
+        height: 4px;
+        background-color: #618967;
+        transform: rotate(90deg);
+        left: -19px;
+        top: 19px;
+    }
+
+    &__block--second {
+        padding-left: 20px;
+        padding-right: 16px;
+    }
+
+    &__block {
+        width: 290px;
+        height: 157px;
+        overflow: hidden;
+        background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
+        border-radius: 10px;
+        margin-top: -10px;
+        padding-top: 20px;
+    }
+
+    &__header {
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+        color: #ffffff;
+        margin-bottom: 5px;
+    }
+
+    &__gram {
+        font-family: "Gilroy-Light";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #ffffff;
+    }
+
+    &--space {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__sub {
+        width: 249px;
+        font-family: "Gilroy-Regular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 17px;
+        color: #cfcfcf;
+        margin-bottom: 14px;
+    }
+
+    &--price {
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #ffffff;
+    }
+
+    &__button {
+        position: relative;
+        cursor: pointer;
+        width: 137px;
+        height: 44px;
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        border: none;
+        background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+    }
+
+    .cold__snacks__button::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 20px;
+        height: 18px;
+        right: 12px;
+        background-image: url(../images/basket.svg);
+        background-repeat: no-repeat;
+    }
+
+    &--btn {
+        cursor: pointer;
+        width: 62px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
+        border-radius: 10px;
+    }
+
+    .cold__snacks--btnn {
+        cursor: pointer;
+        width: 62px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
+        border-radius: 10px;
+    }
+
+    .cold__snacks--btn::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 18px;
+        height: 18px;
+        color: white;
+        background-image: url(../images/plus.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .cold__snacks--btnn::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 18px;
+        height: 18px;
+        color: white;
+        background-image: url(../images/minus.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &--sub {
+        width: auto;
+    }
+    &--spacee {
+        margin-top: 27px;
     }
 }
