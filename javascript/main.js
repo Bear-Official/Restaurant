@@ -12,15 +12,15 @@ const coldSnacks = new Swiper(".cold-snacks", {
         sensitivity: 1,
     },
     // Auto play slider
-    autoplay: {
-        delay: 3000,
-        stopOnLastSlide: false,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 3000,
+    //     stopOnLastSlide: false,
+    //     disableOnInteraction: false,
+    // },
 
     direction: "horizontal",
     loop: false,
     spaceBetween: 16,
-    slidesPerView: 4.1,
-    slidesPerGroup: 4.1,
+    slidesPerView: 4.2,
+    slidesPerGroup: 4.2,
 }); 
