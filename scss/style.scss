@@ -5,13 +5,17 @@
 @import "global";
 @import "media";
 
+.page {
+    background: linear-gradient(360deg, #211f20 0%, #44403f 100%);
+}
+
 .header {
     padding-top: 37px;
     padding-bottom: 37px;
     background-color: #403c3b;
     box-shadow: 0px 30px 60px rgba(34, 31, 32, 0.2);
 
-    &--right {
+    &__center {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -119,7 +123,7 @@
         font-family: "Gilroy-Regular";
         font-weight: 600;
         font-size: 12px;
-        line-height: 14px;
+        line-height: 17px;
         color: #403c3b;
         padding-right: 20px;
         display: flex;
@@ -211,10 +215,15 @@
     min-width: 0;
 }
 
-.snacks {
+.navigation {
+    position: relative;
     padding-top: 27px;
     padding-bottom: 30px;
-    background: linear-gradient(360deg, #211f20 0%, #44403f 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    &__box {
+        position: relative;
+    }
 
     &__list {
         display: flex;
@@ -231,12 +240,12 @@
         color: #cfcfcf;
     }
 
-    .snacks__links:hover {
+    .navigation__links:hover {
         color: white;
     }
 
-    .snacks__links:hover {
-        padding-bottom: 26px;
+    .navigation__links:hover {
+        padding-bottom: 30px;
         border-width: 153px;
         border-bottom: 3px solid #618967;
     }
@@ -252,7 +261,7 @@
 .cold__snacks {
     padding-top: 50px;
     padding-bottom: 50px;
-    background: linear-gradient(360deg, #211f20 0%, #44403f 100%);
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
 
     &__title {
         position: relative;
@@ -307,18 +316,20 @@
     }
 
     &__block--second {
+        height: 160px;
         padding-left: 20px;
         padding-right: 16px;
     }
 
     &__block {
-        width: 284px;
-        height: 157px;
+        max-width: 282px;
         background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
         border-radius: 10px;
-        margin-top: -10px;
+        margin-top: -19px;
         margin-bottom: 90px;
-        padding-top: 20px;
+        padding-top: 40px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     &__header {
@@ -380,7 +391,10 @@
         background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
         border-radius: 10px;
         color: white;
-        text-align: center;
+        justify-content: space-between;
+        display: flex;
+        padding-left: 19px;
+        align-items: center;
     }
 
     .cold__snacks__button::before {
@@ -389,7 +403,7 @@
         display: block;
         width: 20px;
         height: 18px;
-        right: 12px;
+        right: 19px;
         background-image: url(../images/basket.svg);
         background-repeat: no-repeat;
     }
@@ -456,7 +470,7 @@
     background: url(../images/coffee-section-img.jpg);
     background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 
     &__title {
         font-family: "Gilroy";
@@ -545,8 +559,8 @@
 }
 
 .map {
-    margin-top: 70px;
-    margin-bottom: 40px;
+    padding-top: 70px;
+   padding-bottom: 40px;
 
     &__contacts {
         width: 526px;
@@ -779,8 +793,8 @@
         background-color: #fff;
         top: -123px;
         border-radius: 50%;
-        object-fit: none; 
-        transition: 5s;
+        object-fit: none;
+        scroll-behavior: smooth;
     }
 
     .button__left {
@@ -788,3 +802,7 @@
         z-index: 1000;
     }
 }
+
+// .swiper-slide {
+//     margin-right: 95px !important;
+// }
