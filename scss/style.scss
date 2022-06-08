@@ -2,11 +2,15 @@
 @import "fonts";
 @import "reset";
 @import "libs";
+@import "media.scss";
 @import "global";
-@import "media";
 
 .page {
     background: linear-gradient(360deg, #211f20 0%, #44403f 100%);
+}
+
+.slick-slide {
+    height: 0;
 }
 
 .header {
@@ -151,6 +155,8 @@
 
 .swiper-slide {
     position: relative;
+    padding: 0 10px;
+    width: 325px !important;
 }
 
 .slider {
@@ -204,7 +210,6 @@
     width: 100%;
     object-fit: cover;
 }
- 
 
 .snacks--wrapper {
     min-width: 0;
@@ -247,7 +252,7 @@
 }
 
 .kitchen {
-    max-width: 100%;
+    width: 100%;
     position: relative;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -256,7 +261,6 @@
 .cold__snacks {
     padding-top: 50px;
     padding-bottom: 50px;
-
 
     &__title {
         position: relative;
@@ -279,7 +283,7 @@
         content: "";
         position: absolute;
         display: block;
-        width: 153%;
+        width: 140%;
         height: 2px;
         background: rgb(65, 65, 65);
         background: linear-gradient(
@@ -292,7 +296,7 @@
     }
 
     .cold-snacks--mod {
-        margin-top: 30px;
+        margin-top: 48px;
     }
 
     &__count {
@@ -337,11 +341,10 @@
     }
 
     &__block {
-        max-width: 282px;
+        width: 100%;
         background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
         border-radius: 10px;
         margin-top: -19px;
-        margin-bottom: 90px;
         padding-top: 40px;
         width: 100%;
         box-sizing: border-box;
@@ -380,7 +383,7 @@
         font-size: 13px;
         line-height: 17px;
         color: #cfcfcf;
-        margin-bottom: 14px;
+        margin-bottom: 32px;
     }
 
     &--price {
@@ -421,6 +424,10 @@
         right: 19px;
         background-image: url(../images/basket.svg);
         background-repeat: no-repeat;
+    }
+
+    &--spacee {
+        margin-top: 50px;
     }
 
     &--btn {
@@ -474,8 +481,13 @@
     &--sub {
         width: auto;
     }
-    &--spacee {
-        margin-top: 48px;
+
+    &--mood {
+        margin-top: 36px !important;
+    }
+
+    .slick-track {
+        left: 160px !important;
     }
 }
 
@@ -525,6 +537,7 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 16px;
+        transition: 0.5s;
     }
 
     .coffee__button:hover {
@@ -551,10 +564,26 @@
         flex-direction: column;
         background: rgba(80, 75, 74, 0.9);
         backdrop-filter: blur(4px);
+        transition: all 0.3s;
+    }
+
+    &__svg {
+        margin-bottom: 31px;
     }
 
     .coffee__block:hover {
-        background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
+        background: rgba(80, 75, 74, 1);
+        backdrop-filter: none;
+        -webkit-box-shadow: 0px 0px 12px -2px #000000;
+        box-shadow: 0px 0px 12px -5px #000000;
+    }
+
+    .coffee__block:hover .coffee__sub__text {
+        color: #79b282;
+    }
+
+    .coffee__block:hover svg path {
+        fill: #79b282;
     }
 
     &__sub__text {
@@ -564,10 +593,6 @@
         font-size: 18px;
         line-height: 25px;
         color: #ffffff;
-    }
-
-    .coffee__sub__text:hover {
-        color: #79b282;
     }
 
     &__img {
@@ -819,7 +844,3 @@
         z-index: 1000;
     }
 }
-
-// .swiper-slide {
-//     margin-right: 95px !important;
-// }
