@@ -471,6 +471,8 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
+    width: 1364px;
+    margin: auto;
 
     &__title {
         font-family: "Gilroy";
@@ -560,7 +562,7 @@
 
 .map {
     padding-top: 70px;
-   padding-bottom: 40px;
+    padding-bottom: 40px;
 
     &__contacts {
         width: 526px;
