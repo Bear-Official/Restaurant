@@ -120,6 +120,12 @@
     }
 }
 
+@media (max-width: 768px) {
+    .map {
+        background-position: -413px 4px !important;
+    }
+}
+
 // @Tablet
 @media (max-width: 716px) {
     .footer--right {
@@ -128,6 +134,21 @@
     }
     .footer__links {
         display: none;
+    }
+
+    .map {
+        background-position: -440px 4px !important;
+    }
+}
+
+@media (max-width: 690px) {
+    .map {
+        background-position: -737px 420px !important;
+        height: 1000px !important;
+    }
+
+    .map__contacts {
+        margin-top: 332px !important;
     }
 }
 
@@ -150,7 +171,7 @@
     .header .header__border {
         display: none;
     }
-     .coffee {
+    .coffee {
         display: none !important;
     }
 
@@ -160,6 +181,10 @@
         color: #65906c;
         visibility: visible;
         display: block !important;
+    }
+
+    .map__contacts {
+        margin-top: 199px !important;
     }
 
     .header .header__button {
@@ -255,7 +280,12 @@
     }
 
     .map {
-        height: 853px !important;
+        height: 1197px !important;
+        background-position: -780px 578px !important;
+    }
+
+    .map__contacts {
+        margin-top: 300px !important;
     }
 
     .map__box {
@@ -336,3 +366,29 @@
         order: 0;
     }
 }
+
+@media (min-width: 400px) and (max-width: 401px) {
+    .map {
+        background-position: -873px 578px !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .map {
+        background-position: -893px 578px !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .map {
+        background-position: -910px 578px !important;
+    }
+}
+
+@media (min-width: 402px) and (max-width: 502px) {
+    .map {
+        background-position: -843px 578px !important;
+    }
+}
+
+//     background-position: -909px 186px;
