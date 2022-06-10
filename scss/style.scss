@@ -156,7 +156,7 @@
 .swiper-slide {
     position: relative;
     padding: 0 10px;
-    width: 325px !important;
+    width: 325px;
 }
 
 .slider {
@@ -166,6 +166,9 @@
         #211f20 100%,
         rgba(42, 139, 109, 65) 308%
     );
+    // background-image: url(../images/banner.jpg);
+    // background-repeat: no-repeat;
+    // background-size: contain;
 
     &__description {
         position: absolute;
@@ -216,7 +219,11 @@
 }
 
 .navigation {
-    position: relative;
+    // position: sticky;
+    // top: 0;
+    // z-index: 800;
+    // width: 100%;
+    // background: linear-gradient(360deg, #211f20 0%, #44403f 100%);
     padding-top: 27px;
     padding-bottom: 30px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -488,7 +495,7 @@
     }
 
     .slick-track {
-        left: 160px !important;
+        left: 165px;
     }
 }
 
@@ -856,6 +863,7 @@
         z-index: 1000;
     }
 }
+
 
 #hot__snacks:last-child {
     margin-bottom: 0;

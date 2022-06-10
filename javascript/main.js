@@ -7,7 +7,7 @@ $(document).ready(function () {
     $(".swiper-wrapper").slick({
         centerMode: true,
         centerPadding: "0px",
-        slidesToShow: 2,
+        slidesToShow: 4,
         slidesToScroll: 2,
         swipeToSlide: true,
         arrows: false,
