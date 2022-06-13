@@ -618,7 +618,7 @@
     background-size: 1440px;
     height: 740px;
     background-position: center;
-    margin-top: -220px;
+    margin-top: -220px !important;
 
     &__contacts {
         width: 526px;
@@ -630,7 +630,7 @@
         padding-bottom: 25px;
         padding-left: 53px;
         padding-right: 53px;
-        margin-top: 225px; 
+        margin-top: 225px;
     }
 
     &__box {
@@ -870,4 +870,190 @@
 
 #hot__snacks:last-child {
     margin-bottom: 0;
+}
+
+.map--mod {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    background-image: url(../images/map.jpg);
+    background-repeat: no-repeat;
+    background-size: 1440px;
+    height: 740px;
+    background-position: center;
+    margin-top: 84px;
+}
+
+.products {
+    margin-top: 44px;
+    margin-bottom: 50px;
+
+    &__txt {
+        vertical-align: super;
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+        margin-left: 10px;
+    }
+
+    &__img {
+        border-radius: 10px;
+        margin-top: 27px;
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__block {
+        width: 608px;
+        height: 400px;
+        background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
+        border-radius: 10px;
+        padding-left: 50px;
+        padding-top: 38px;
+        padding-bottom: 25px;
+        margin-top: auto;
+    }
+
+    &__title {
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        color: #ffffff;
+        margin-bottom: 5px;
+    }
+
+    &__description {
+        font-family: "Gilroy-Regular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #cfcfcf;
+        margin-bottom: 113px;
+    }
+
+    &__weight {
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #ffffff;
+        margin-bottom: 22px;
+        display: block;
+    }
+
+    &__button {
+        position: relative;
+        cursor: pointer;
+        width: 145px;
+        height: 50px;
+        background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
+        border-radius: 10px;
+        border: none;
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+        margin-right: 25px;
+        padding-right: 50px;
+        margin-bottom: 30px;
+    }
+
+    .products__button::before {
+        content: "";
+        position: absolute;
+        display: block;
+        background-image: url(../images/shopping-bag.png);
+        background-repeat: no-repeat;
+        width: 19px;
+        height: 19px;
+        right: 15px;
+    }
+
+    .products__button::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 32px;
+        height: 1px;
+        right: 35px;
+        background-image: url(../images/Line.png);
+        transform: rotate(90deg);
+        margin-top: -8px;
+    }
+
+    &__row {
+        display: contents;
+    }
+
+    &__price {
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        color: #ffffff;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 50px;
+    }
+
+    &__link {
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        color: #ffffff;
+    }
+
+    &__navigation {
+        position: relative;
+    }
+
+    .products__navigation::after {
+        position: absolute;
+        display: block;
+        content: "";
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        width: 109%;
+        height: 3px;
+        margin-left: -50px;
+        margin-top: 5px;
+    }
+
+    &__items {
+        margin-right: 63px;
+        padding-top: 10px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .products__price { 
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &__links {
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #ffffff;
+    }
 }
