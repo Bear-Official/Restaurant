@@ -46,7 +46,7 @@
                         <a href="tel:+7(917) 510-57-59" class="header__tel--link">+7 (917) 510-57-59</a>
                     </div>
                 </div>
-                <a href="#" class="header__cart">
+                <a href="#" data-toggle="modal" class="header__cart">
                     <span class="header__cart--title">Корзина</span>
                     <div class="header__border"></div>
                     <div class="header__block">
@@ -150,7 +150,7 @@
                                                     курагой, апельсином и зеленым яблоком
                                                 </p>
                                                 <div class="cold__snacks--space">
-                                                    <span class="cold__snacks--price">620 ₽</span> 
+                                                    <span class="cold__snacks--price">620 ₽</span>
                                                     <a href="cart.html" class="cold__snacks__button">В
                                                         корзину</a>
                                                 </div>
@@ -397,6 +397,7 @@
                                                     <span class="cold__snacks--price">560 ₽</span>
                                                     <button type="submit" class="cold__snacks__button">В
                                                         корзину</button>
+                                                    <span class="delete-btn"></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -717,8 +718,20 @@
         </div>
         <!-- End footer -->
     </footer>
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <img src="images/illustration.png" class="modal__img" alt="illustration">
+            <a href="#" class="modal__btn">
+                <img src="images/btn-close.png" alt="btn-close" class="modal__close">
+            </a>
+            <span class="modal__text">КОРЗИНА ПУСТАЯ</span>
+            <button type="submit" class="modal__button">Посмотреть меню</button>
+        </div>
+    </div>
 
     <script src="javascript/main.min.js"></script>
+    <script src="javascript/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>

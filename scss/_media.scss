@@ -188,6 +188,11 @@
         display: none;
     }
 
+    .modal .modal__content {
+        width: 332px;
+        height: 318px;
+    }
+
     .products__item {
         margin-right: 30px !important;
     }
@@ -474,6 +479,11 @@
     .products .products__price {
         margin-top: 1rem;
         margin-bottom: 1rem;
+    }
+
+    .modal .modal__content {
+        width: 290px;
+        height: 71%;
     }
 }
 @media (max-width: 320px) {
