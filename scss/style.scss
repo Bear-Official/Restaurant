@@ -1143,3 +1143,166 @@
         display: block;
     }
 }
+.conditions {
+    padding-top: 50px;
+    padding-bottom: 400px;
+
+    &__title {
+        position: relative;
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-bottom: 42px;
+        padding-left: 19px;
+    }
+
+    &__map {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        margin-top: 20px;
+    }
+
+    &__item {
+        width: 618px;
+        height: 68px;
+        background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    &__sub__text {
+        position: relative;
+        cursor: pointer;
+        display: block;
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 35px;
+        color: #ffffff;
+        padding: 16px 30px;
+        margin-bottom: 10px;
+    }
+
+    &__sub__txt {
+        position: relative;
+        padding: 16px 30px;
+        display: none;
+        width: 618px;
+        height: 220px;
+        background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
+        border-radius: 10px;
+    }
+
+    &__input {
+        width: 0;
+        height: 0;
+        position: absolute;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    .conditions__input:checked ~ .conditions__sub__txt {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .conditions__input:checked ~ .conditions__sub__text::after {
+        position: absolute;
+        background-image: url(../images/Arrow-down.png);
+        background-repeat: no-repeat;
+    }
+
+    .conditions__sub__text::after {
+        position: absolute;
+        content: "";
+        display: block;
+        top: 17px;
+        right: 22px;
+        background-image: url(../images/Arrow-down.png);
+        transform: rotate(176deg);
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+    }
+
+    &__description {
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        color: #ffffff;
+        margin-top: 10px;
+    }
+
+    .conditions__title::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 33px;
+        height: 4px;
+        background-color: #618967;
+        transform: rotate(90deg);
+        left: -19px;
+        top: 19px;
+    }
+
+    &__image {
+        min-width: 600px;
+        height: 450px;
+        margin-top: 131px;
+    }
+
+    &__time__delivery {
+        display: block;
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 35px;
+        color: #ffffff;
+    }
+
+    &__time__work {
+        display: block;
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 35px;
+        color: #cfcfcf;
+        margin-bottom: 40px;
+    }
+
+    &__column {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__order__title {
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 35px;
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+
+    &__desc {
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 35px;
+        color: #cfcfcf;
+    }
+}
