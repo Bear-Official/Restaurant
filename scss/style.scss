@@ -25,6 +25,37 @@
         justify-content: space-between;
     }
 
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    &__profile__title {
+        position: relative;
+        font-family: "Gilroy-Regular";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #ffffff;
+    }
+
+    &__profile__img {
+        margin-right: 10px;
+    }
+
+    .header--contact::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 2px;
+        height: 52px;
+        left: 156px;
+        background-color: #635c5a;
+        top: -4px;
+    }
+
     &__title {
         font-family: "Gilroy-Medium";
         font-style: normal;
@@ -84,6 +115,7 @@
     }
 
     &--contact {
+        position: relative;
         font-family: "Gilroy-regular";
         font-style: normal;
         font-weight: 400;
@@ -224,6 +256,7 @@
     padding-top: 27px;
     padding-bottom: 30px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 
     &__box {
         position: relative;
@@ -1309,4 +1342,84 @@
     max-width: 100%;
     width: 600px;
     height: 400px;
+}
+
+.promo {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    &__header {
+        position: relative;
+        font-family: "Gilroy-SemiBold";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding-left: 20px;
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .promo__header::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 33px;
+        height: 4px;
+        background-color: #618967;
+        transform: rotate(90deg);
+        left: -19px;
+        top: 19px;
+    }
+
+    &__block { 
+        width: 100%;
+        max-width: 440px;
+        max-height: 100%; 
+        background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
+        border-radius: 10px;
+        margin-top: 40px;
+        overflow: hidden;
+    }
+
+    &__item {
+        padding: 15px 25px;
+    }
+
+    &__text {
+        display: block;
+        font-family: "Gilroy-SemiBold";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: #ffffff;
+        margin-bottom: 5px;
+    }
+
+    &__description {
+        font-family: "Gilroy-Regular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #a6a7ab;
+        margin-bottom: 19px;
+    }
+
+    &__expire__date {
+        font-family: "Gilroy-Regular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #6fa076;
+    }
 }
