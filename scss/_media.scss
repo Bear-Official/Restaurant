@@ -28,6 +28,10 @@
         max-width: 485px;
     }
 
+    .conditions {
+        padding-bottom: 900px !important;
+    }
+
     .products__img {
         margin-top: 0;
         max-width: 216%;
@@ -49,6 +53,20 @@
     .footer__links {
         font-size: 17px !important;
         padding-left: 20px !important;
+    }
+}
+
+@media (max-width: 1257px) {
+    .conditions .conditions__map {
+        flex-wrap: wrap;
+        max-width: 600px;
+    }
+
+    .conditions .conditions__image {
+        min-width: 100%;
+        display: flex;
+        order: -1;
+        margin-bottom: 3rem;
     }
 }
 
@@ -161,6 +179,12 @@
         display: none;
     }
 
+    .conditions .conditions__column {
+        display: block;
+        padding-left: 5px;
+        margin-top: 30px;
+    }
+
     .map {
         background-position: -440px 4px !important;
     }
@@ -186,6 +210,14 @@
     }
     .header .header__contacts {
         display: none;
+    } 
+
+    .products__img { 
+        height: 100% !important;
+    }
+
+    .conditions {
+        padding-bottom: 1000px !important;
     }
 
     .modal .modal__content {
@@ -456,6 +488,14 @@
         background-position: -893px 578px !important;
     }
 
+    .conditions .conditions__title {
+        font-size: 25px;
+    }
+
+    .conditions {
+        padding-bottom: 1080px !important;
+    }
+
     .products__item {
         margin-right: 21px !important;
     }
@@ -505,5 +545,39 @@
 
     .products .products__items {
         margin-left: -14px;
+    }
+}
+
+@media (max-width: 646px) {
+    .conditions .conditions__sub__txt {
+        width: 100%;
+    }
+
+    .conditions .conditions__item {
+        max-width: 100%;
+        height: 87px;
+    }
+
+    .conditions .conditions__sub__text {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1257px) {
+    .conditions {
+        padding-left: 250px;
+    }
+}
+
+@media (max-width: 500px) {
+    .conditions .conditions__image {
+        object-fit: contain;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .conditions .conditions__sub__text::after {
+        right: 7px !important;
     }
 }

@@ -29,7 +29,7 @@
                     <i class="fa-solid fa-bars menu"></i>
                 </button>
                 <picture>
-                    <a href="#" class="header__link">
+                    <a href="index.html" class="header__link">
                         <h1 class="header__title ">Logos</h1>
                     </a>
                 </picture>
@@ -100,31 +100,31 @@
         </div>
         <section class="conditions">
             <div class="container">
+                <a class="button__back" href="index.html">
+                    <svg width="26" class="products__svg" height="26" viewBox="0 0 26 26" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="13" cy="13" r="13" fill="url(#paint0_linear_8362_1137)" />
+                        <path
+                            d="M9.46967 12.4697C9.17678 12.7626 9.17678 13.2374 9.46967 13.5303L14.2426 18.3033C14.5355 18.5962 15.0104 18.5962 15.3033 18.3033C15.5962 18.0104 15.5962 17.5355 15.3033 17.2426L11.0607 13L15.3033 8.75736C15.5962 8.46447 15.5962 7.98959 15.3033 7.6967C15.0104 7.40381 14.5355 7.40381 14.2426 7.6967L9.46967 12.4697ZM11 12.25L10 12.25L10 13.75L11 13.75L11 12.25Z"
+                            fill="white" />
+                        <defs>
+                            <linearGradient id="paint0_linear_8362_1137" x1="1.25806" y1="1.47727" x2="29.0993"
+                                y2="14.4163" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#618967" />
+                                <stop offset="1" stop-color="#72A479" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="products__txt">Вернуться назад</span>
+                </a>
+                <h1 class="conditions__title">Условия доставки</h1>
                 <div class="conditions__map">
-
                     <div class="conditions__box">
-                        <a class="button__back" href="#" onclick="window.history.back()">
-                            <svg width="26" class="products__svg" height="26" viewBox="0 0 26 26" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="13" cy="13" r="13" fill="url(#paint0_linear_8362_1137)" />
-                                <path
-                                    d="M9.46967 12.4697C9.17678 12.7626 9.17678 13.2374 9.46967 13.5303L14.2426 18.3033C14.5355 18.5962 15.0104 18.5962 15.3033 18.3033C15.5962 18.0104 15.5962 17.5355 15.3033 17.2426L11.0607 13L15.3033 8.75736C15.5962 8.46447 15.5962 7.98959 15.3033 7.6967C15.0104 7.40381 14.5355 7.40381 14.2426 7.6967L9.46967 12.4697ZM11 12.25L10 12.25L10 13.75L11 13.75L11 12.25Z"
-                                    fill="white" />
-                                <defs>
-                                    <linearGradient id="paint0_linear_8362_1137" x1="1.25806" y1="1.47727" x2="29.0993"
-                                        y2="14.4163" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#618967" />
-                                        <stop offset="1" stop-color="#72A479" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                            <span class="products__txt">Вернуться назад</span>
-                        </a>
-                        <h1 class="conditions__title">Условия доставки</h1>
+
                         <div class="conditions__item">
                             <label class="conditions__sub__text" for="conditions__1">У наших курьеров всегда должна быть
                                 сдача!</label>
-                            <input class="conditions__input" type="checkbox" id="conditions__1">
+                            <input class="conditions__input" type="checkbox" name="fap" id="conditions__1">
                             <div class="conditions__sub__txt">
                                 <p class="conditions__description">
                                     Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут
@@ -135,7 +135,7 @@
                             <div class="conditions__item">
                                 <label class="conditions__sub__text" for="conditions__2">У Вам что-то не
                                     довезли?</label>
-                                <input class="conditions__input" type="checkbox" id="conditions__2">
+                                <input class="conditions__input" type="checkbox" name="fap" id="conditions__2">
                                 <div class="conditions__sub__txt">
                                     <p class="conditions__description">
                                         Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут
@@ -146,7 +146,7 @@
                                 <div class="conditions__item">
                                     <label class="conditions__sub__text" for="conditions__3">Не понравился
                                         продукт?</label>
-                                    <input class="conditions__input" type="checkbox" id="conditions__3">
+                                    <input class="conditions__input" type="checkbox" name="fap" id="conditions__3">
                                     <div class="conditions__sub__txt">
                                         <p class="conditions__description">
                                             Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас
@@ -158,7 +158,7 @@
                                     <div class="conditions__item">
                                         <label class="conditions__sub__text" for="conditions__4">Если появились
                                             замечания</label>
-                                        <input class="conditions__input" type="checkbox" id="conditions__4">
+                                        <input class="conditions__input" type="checkbox" name="fap" id="conditions__4">
                                         <div class="conditions__sub__txt">
                                             <p class="conditions__description">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quam
@@ -171,7 +171,7 @@
                                             <label class="conditions__sub__text" for="conditions__5">Оплата Visa,
                                                 MasterCard
                                                 и МИР</label>
-                                            <input class="conditions__input" type="checkbox" id="conditions__5">
+                                            <input class="conditions__input" type="checkbox" name="fap" id="conditions__5">
                                             <div class="conditions__sub__txt">
                                                 <p class="conditions__description">
                                                     Мы очень внимательно следим за качеством нашей работы, поэтому, если
@@ -184,7 +184,7 @@
                                             <div class="conditions__item">
                                                 <label class="conditions__sub__text"
                                                     for="conditions__6">Реквизиты</label>
-                                                <input class="conditions__input" type="checkbox" id="conditions__6">
+                                                <input class="conditions__input" type="checkbox" name="fap" id="conditions__6">
                                                 <div class="conditions__sub__txt">
                                                     <p class="conditions__description">
                                                         Мы очень внимательно следим за качеством нашей работы, поэтому,
@@ -210,7 +210,7 @@
                                             <div class="conditions__order">
                                                 <h3 class="conditions__order__title">Минимальный заказ:</h3>
                                                 <p class="conditions__desc">
-                                                    Бесплатная доставка пешим курьером при сумме заказа от 400 ₽ 
+                                                    Бесплатная доставка пешим курьером при сумме заказа от 400 ₽
                                                     Доставка оператором такси от любой суммы заказа - по тарифам
                                                     перевозчика.
                                                 </p>

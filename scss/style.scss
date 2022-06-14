@@ -26,7 +26,7 @@
     }
 
     &__title {
-        font-family: "Gilroy";
+        font-family: "Gilroy-Medium";
         font-style: normal;
         font-weight: 700;
         font-size: 25px;
@@ -166,9 +166,6 @@
         #211f20 100%,
         rgba(42, 139, 109, 65) 308%
     );
-    // background-image: url(../images/banner.jpg);
-    // background-repeat: no-repeat;
-    // background-size: contain;
 
     &__description {
         position: absolute;
@@ -239,7 +236,7 @@
 
     &__links {
         position: relative;
-        font-family: "Gilroy";
+        font-family: "Gilroy-Regular";
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
@@ -271,7 +268,7 @@
 
     &__title {
         position: relative;
-        font-family: "Gilroy";
+        font-family: "Gilroy-SemiBold";
         font-style: normal;
         font-weight: 700;
         font-size: 32px;
@@ -359,7 +356,7 @@
     }
 
     &__header {
-        font-family: "Gilroy";
+        font-family: "Gilroy-SemiBold";
         font-style: normal;
         font-weight: 700;
         font-size: 22px;
@@ -395,7 +392,7 @@
     }
 
     &--price {
-        font-family: "Gilroy";
+        font-family: "Gilroy-Regular";
         font-style: normal;
         font-weight: 600;
         font-size: 20px;
@@ -408,7 +405,7 @@
         cursor: pointer;
         width: 137px;
         height: 44px;
-        font-family: "Gilroy";
+        font-family: "Gilroy-SemiBold";
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
@@ -512,7 +509,7 @@
     z-index: 999;
 
     &__title {
-        font-family: "Gilroy";
+        font-family: "Gilroy-Medium";
         font-style: normal;
         font-weight: 700;
         font-size: 32px;
@@ -524,7 +521,7 @@
 
     &__description {
         width: 563px;
-        font-family: "Gilroy";
+        font-family: "Gilroy-Regular";
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
@@ -645,7 +642,7 @@
 
     &__title {
         position: relative;
-        font-family: "Gilroy";
+        font-family: "Gilroy-Medium";
         font-style: normal;
         font-weight: 700;
         font-size: 30px;
@@ -676,7 +673,7 @@
 
     &__adress {
         color: #cfcfcf;
-        font-family: "Gilroy";
+        font-family: "Gilroy-Regular";
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -687,7 +684,7 @@
     &__sub__description {
         width: 391px;
         margin-left: 42px;
-        font-family: "Gilroy";
+        font-family: "Gilroy-SemiBold";
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
@@ -708,7 +705,7 @@
     &__mail {
         position: relative;
         display: block;
-        font-family: "Gilroy";
+        font-family: "Gilroy-SemiBold";
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
@@ -750,7 +747,7 @@
     }
 
     &__tel {
-        font-family: "Gilroy";
+        font-family: "Gilroy-Medium";
         font-style: normal;
         font-weight: 700;
         font-size: 23px;
@@ -766,7 +763,7 @@
 
     &__social {
         display: block;
-        font-family: "Gilroy";
+        font-family: "Gilroy-Regular";
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
@@ -792,7 +789,7 @@
     background: linear-gradient(270.7deg, #44403f 0.4%, #211f20 100%);
 
     &__title {
-        font-family: "Gilroy";
+        font-family: "Gilroy-Medium";
         font-style: normal;
         font-weight: 700;
         font-size: 25px;
@@ -825,7 +822,7 @@
     }
 
     &__link {
-        font-family: "Gilroy";
+        font-family: "Gilroy-Regular";
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
@@ -841,7 +838,7 @@
     }
 
     &__links {
-        font-family: "Gilroy";
+        font-family: "Gilroy-Medium";
         font-style: normal;
         font-weight: 500;
         font-size: 20px;
@@ -1145,7 +1142,7 @@
 }
 .conditions {
     padding-top: 50px;
-    padding-bottom: 400px;
+    padding-bottom: 520px;
 
     &__title {
         position: relative;
@@ -1170,7 +1167,7 @@
     }
 
     &__item {
-        width: 618px;
+        max-width: 618px;
         height: 68px;
         background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
         border-radius: 10px;
@@ -1199,6 +1196,7 @@
         height: 220px;
         background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
         border-radius: 10px;
+        top: -9px;
     }
 
     &__input {
@@ -1258,7 +1256,7 @@
     &__image {
         min-width: 600px;
         height: 450px;
-        margin-top: 131px;
+        object-fit: cover;
     }
 
     &__time__delivery {
@@ -1305,4 +1303,10 @@
         line-height: 35px;
         color: #cfcfcf;
     }
+}
+
+.products__img {
+    max-width: 100%;
+    width: 600px;
+    height: 400px;
 }
