@@ -191,6 +191,9 @@
         display: none;
     }
 
+    .header--contact::after {
+        display: none !important;
+    }
     .conditions .conditions__column {
         display: block;
         padding-left: 5px;
@@ -611,9 +614,9 @@
 
     .header .header__title {
         padding-left: 25px;
-    } 
+    }
 
-    .promo .promo__header { 
+    .promo .promo__header {
         font-size: 25px;
     }
 }
