@@ -346,6 +346,17 @@
         top: 0;
     }
 
+    &__input {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 35px;
+        text-align: center;
+        background: #79b382;
+        color: white;
+        border: none;
+    }
+
     &--count {
         display: flex;
         align-items: center;
@@ -1844,15 +1855,7 @@
         align-items: center;
         justify-content: space-between;
     }
-}
-
-.order .button:first-child {
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    margin-bottom: 20px;
-}
-.order .button:last-child {
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
 } 
-
+.menu--wrapper { 
+    background: transparent;
+}
