@@ -1585,6 +1585,15 @@
         background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
         border-radius: 10px;
         padding-left: 30px;
+        color: white;
+
+        option {
+            background-color: #494544;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            padding: 5px;
+        }
     }
 
     &__choose {
@@ -1621,15 +1630,7 @@
         line-height: 19px;
         color: #ffffff;
     }
-    // .active {
-    //     width: 184px;
-    //     height: 60px;
-    //     background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
-    //     border-radius: 0px 13px 10px 0px;
-    //     border: none;
-    // }
 
-    /* Style the buttons */
     .btn {
         border: none;
         outline: none;
@@ -1683,10 +1684,6 @@
     color: #fff;
     margin-right: -15px;
     border: 1px solid #72a479;
-}
-
-.button--secondd {
-    border: 1px solid #72a479 !important;
 }
 
 .when {
@@ -1800,7 +1797,7 @@
         background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
         border-radius: 10px;
         margin-top: 20px;
-        padding: 30px 32px; 
+        padding: 30px 32px;
         height: 100%;
     }
 
@@ -1848,3 +1845,14 @@
         justify-content: space-between;
     }
 }
+
+.order .button:first-child {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-bottom: 20px;
+}
+.order .button:last-child {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+} 
+

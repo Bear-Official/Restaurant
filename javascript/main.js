@@ -38,48 +38,6 @@ $(document).ready(function () {
     }
 });
 
-// First livrary
-var btnContainer = document.getElementById("livrary");
-var btns = btnContainer.getElementsByClassName("button");
-var btns = btnContainer.getElementsByClassName("button");
-
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-    });
-}
-
-// Second livrary
-var btnContainer = document.getElementById("livrary-two");
-
-var btns = btnContainer.getElementsByClassName("btn");
-var btns = btnContainer.getElementsByClassName("btn");
-
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("activ");
-        current[0].className = current[0].className.replace(" activ", "");
-        this.className += " activ";
-    });
-}
-
-// Three livrary
-
-var btnContainer = document.getElementById("when");
-
-var btns = btnContainer.getElementsByClassName("buttonn");
-var btns = btnContainer.getElementsByClassName("buttonn");
-
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("activee");
-        current[0].className = current[0].className.replace(" activee", "");
-        this.className += " activee";
-    });
-}
-
 $(document).ready(function () {
     $(".minus").click(function () {
         var $input = $(this).parent().find("input");
@@ -96,3 +54,16 @@ $(document).ready(function () {
         return false;
     });
 });
+
+var btnContainer = document.getElementsByClassName("livrary");
+
+for (let j = 0; j < btnContainer.length; j++) {
+    var btns = btnContainer[j].getElementsByClassName("button");
+    for (let i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("active");
+            current[j].className = current[j].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+}

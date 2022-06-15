@@ -1,3 +1,4 @@
+
 @media (max-width: 10000px) and (min-width: 599px) {
     i,
     .menu__button {
@@ -458,6 +459,19 @@
     .map--mod {
         height: 665px !important;
     }
+
+    .livrary {
+        display: flex;
+    }
+
+    .order .button {
+        margin-right: -9px !important;
+        font-size: 14px !important;
+    } 
+
+    .container { 
+        padding: 0 10px;
+    }
 }
 
 // @Tel
@@ -492,6 +506,10 @@
     .header .header__center {
         display: flex;
         flex-wrap: wrap;
+    } 
+
+    .order .order__header::after { 
+        left: -8px !important;
     }
 
     .header .header__form {
