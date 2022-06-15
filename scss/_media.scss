@@ -1,4 +1,4 @@
-@media (max-width: 4000px) and (min-width: 599px) {
+@media (max-width: 10000px) and (min-width: 599px) {
     i,
     .menu__button {
         display: none !important;
@@ -260,7 +260,7 @@
     }
 
     .products .products__description {
-        margin-bottom: 0;
+        margin-bottom: 1rem;
     }
 
     .header .header__title {
@@ -376,6 +376,10 @@
         margin-right: -57px;
         width: 151% !important;
     }
+
+    .products__navigation::after {
+        margin-left: -308px !important;
+    }
 }
 
 @media (max-width: 580px) {
@@ -434,6 +438,10 @@
     }
     .promo {
         padding: 25px 15px;
+    }
+
+    .map--mod {
+        height: 665px !important;
     }
 }
 
@@ -527,10 +535,6 @@
         margin-left: -34px;
         overflow: hidden;
     }
-
-    .products__description {
-        width: 265px;
-    }
 }
 
 @media (max-width: 354px) {
@@ -618,5 +622,11 @@
 
     .promo .promo__header {
         font-size: 25px;
+    }
+}
+
+@media (max-width: 320px) {
+    .products__navigation::after {
+        margin-left: -53px !important;
     }
 }
