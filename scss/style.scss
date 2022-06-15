@@ -1499,7 +1499,7 @@
     &__block {
         max-width: 800px;
         width: 100%;
-        height: 200px;
+        max-height: 200px;
         max-height: 100%;
         background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
         border-radius: 10px;
@@ -1597,8 +1597,9 @@
     }
 
     &--modificator {
-        width: 800px;
-        height: 181px;
+        max-width: 800px;
+        max-height: 181px;
+        width: 100%;
     }
 
     &__delivery {
@@ -1690,8 +1691,8 @@
 
 .when {
     &__block {
-        width: 800px;
-        height: 370px;
+        max-width: 800px;
+        max-height: 370px;
         background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
         border-radius: 10px;
         padding: 30px 32px;
@@ -1794,12 +1795,13 @@
 
 .agreement {
     &__block {
-        width: 800px;
-        height: 85px;
+        max-width: 800px;
+        max-height: 85px;
         background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
         border-radius: 10px;
         margin-top: 20px;
-        padding: 30px 32px;
+        padding: 30px 32px; 
+        height: 100%;
     }
 
     &__title {
@@ -1820,6 +1822,7 @@
         line-height: 15px;
         color: #72a479;
         text-decoration: underline;
+        margin-top: 3px;
     }
 
     &__btn {
