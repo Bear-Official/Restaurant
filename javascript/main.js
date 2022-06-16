@@ -68,15 +68,15 @@ for (let j = 0; j < btnContainer.length; j++) {
     }
 }
 
-let body = document.getElementsByTagName("body")[0];
-let menuButton = document.getElementsByTagName("label")[0];
+// let body = document.getElementsByTagName("body")[0];
+// let menuButton = document.getElementsByTagName("label")[0];
 
-menuButton.addEventListener("click", myFunction);
+// menuButton.addEventListener("click", myFunction);
 
-function myFunction() {
-    $("body").css(
-        "overflow",
-        $("body").css("overflow") == "hidden" ? "auto" : "hidden"
-    );
-}
+// function myFunction() {
+//     $("body").css(
+//         "overflow",
+//         $("body").css("overflow") == "hidden" ? "auto" : "hidden"
+//     );
+// }
 
