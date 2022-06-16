@@ -13,6 +13,7 @@
     height: 0;
 }
 
+// Start Header
 .header {
     padding-top: 37px;
     padding-bottom: 37px;
@@ -184,6 +185,7 @@
         margin-right: 19px;
     }
 }
+// End Header
 
 .swiper-slide {
     position: relative;
@@ -248,11 +250,6 @@
 }
 
 .navigation {
-    // position: sticky;
-    // top: 0;
-    // z-index: 800;
-    // width: 100%;
-    // background: linear-gradient(360deg, #211f20 0%, #44403f 100%);
     padding-top: 27px;
     padding-bottom: 30px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -294,7 +291,7 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-
+// Started Cold snacks
 .cold__snacks {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -538,8 +535,9 @@
     .slick-track {
         left: 165px;
     }
+    // End Cold Snacks
 }
-
+// Start Coffee
 .coffee {
     padding-top: 100px;
     padding-bottom: 101px;
@@ -649,8 +647,10 @@
     &__img {
         margin-bottom: 26px;
     }
+    // End coffee
 }
 
+// Start map
 .map {
     padding-top: 70px;
     padding-bottom: 40px;
@@ -825,8 +825,10 @@
         position: absolute;
         width: 1715px;
     }
+    // End map
 }
 
+// Start Footer
 .footer {
     padding-top: 26px;
     padding-bottom: 28px;
@@ -917,6 +919,7 @@
         -webkit-transform: translateZ(0);
         z-index: 1000;
     }
+    // End Footer
 }
 
 #hot__snacks:last-child {
@@ -934,6 +937,7 @@
     margin-top: 84px;
 }
 
+// Start Products
 .products {
     margin-top: 44px;
     margin-bottom: 50px;
@@ -1107,8 +1111,10 @@
         line-height: 14px;
         color: #ffffff;
     }
+    // End Products
 }
 
+// Start Modal
 .modal {
     &__overlay {
         position: fixed;
@@ -1193,7 +1199,9 @@
         color: #ffffff;
         display: block;
     }
+    // End Modal
 }
+// Start conditions
 .conditions {
     padding-top: 50px;
     padding-bottom: 520px;
@@ -1357,6 +1365,7 @@
         line-height: 35px;
         color: #cfcfcf;
     }
+    // End Conditions
 }
 
 .products__img {
@@ -1365,6 +1374,7 @@
     height: 400px;
 }
 
+// Start Promo
 .promo {
     padding-top: 50px;
     padding-bottom: 70px;
@@ -1452,6 +1462,7 @@
 .promo__img:hover {
     transform: scale(1.1);
 }
+// End Promo
 
 .img__wrap {
     overflow: hidden;
@@ -1670,6 +1681,7 @@
         line-height: 19px;
         color: #ffffff;
         margin-right: -15px;
+        margin-bottom: 20px;
     }
 }
 
@@ -1858,4 +1870,4 @@
 }
 .menu--wrapper {
     background: transparent;
-}
+} 
