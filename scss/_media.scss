@@ -275,6 +275,7 @@
 
     .header .header__title {
         font-size: 25px;
+        margin-left: 50px;
     }
 
     .header .header__cart--count,
@@ -654,10 +655,6 @@
         display: none;
     }
 
-    .header .header__title {
-        padding-left: 25px;
-    }
-
     .promo .promo__header {
         font-size: 25px;
     }
@@ -773,7 +770,7 @@
     }
     #active:checked ~ .wrapper {
         clip-path: circle(75%);
-        z-index: 1; 
+        z-index: 1;
         background: black;
     }
     .menu-btn {
@@ -854,10 +851,9 @@
         text-align: center;
         width: 100%;
         color: #202020;
-    } 
+    }
 
-    .footer--modificatorr { 
+    .footer--modificatorr {
         padding: 0 !important;
     }
-} 
-
+}

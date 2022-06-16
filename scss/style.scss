@@ -955,7 +955,8 @@
 
     &__img {
         border-radius: 10px;
-        margin-top: 27px;
+        margin-top: 27px; 
+        object-fit: cover;
     }
 
     &__inner {
