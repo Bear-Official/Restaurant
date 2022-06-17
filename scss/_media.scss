@@ -792,7 +792,8 @@
         color: #fff;
     }
     #active:checked ~ .menu-btn i:before {
-        content: "\f00d";
+        content: "\f00d"; 
+        position: fixed;
     }
     .wrapper ul {
         position: absolute;
