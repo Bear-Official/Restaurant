@@ -1,4 +1,4 @@
-@media (max-width: 10000px) and (min-width: 599px) {
+@media (max-width: 10000px) and (min-width: 598px) {
     i,
     .menu__button {
         display: none !important;
@@ -242,7 +242,7 @@
     }
 
     .conditions {
-        padding-bottom: 1000px !important;
+        padding-bottom: 1300px !important;
     }
 
     .modal .modal__content {
@@ -557,9 +557,9 @@
         font-size: 25px;
     }
 
-    .conditions {
-        padding-bottom: 1080px !important;
-    }
+    // .conditions {
+    //     padding-bottom: 1080px !important;
+    // }
 
     .products__item {
         margin-right: 21px !important;
@@ -860,7 +860,13 @@
 }
 
 @media (max-width: 1050px) {
-    .header__cart {
+    .header--cart {
         display: none !important;
+    }
+}
+
+@media (max-width: 601px) {
+    .conditions {
+        padding-bottom: 1300px !important;
     }
 }
