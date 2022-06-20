@@ -67,4 +67,28 @@ for (let j = 0; j < btnContainer.length; j++) {
         });
     }
 }
- 
+
+var navigation = $(".navigation");
+var navigationTop = navigation.offset().top;
+$(window).scroll(function (){
+    var windowTop = $(this).scrollTop();
+    if (windowTop > navigationTop);
+    console.log(sroll);
+});
+
+// var navigation = $(".reveal");
+// window.addEventListener("scroll", reveal);
+// function reveal() {
+//     var reveal = document.querySelector(".reveal");
+//     for (var i = 0; i < reveals.length; i++) {
+//         var windowheight = window.innerHeight;
+//         var revealtop = reveals[i].getBoundingClientRect().top;
+//         var revealpoint = 150;
+
+//         if (revealtop < windowheight - revealpoint) {
+//             reveal[i].classList.add("active");
+//         } else {
+//             reveal[i].classList.remove("active");
+//         }
+//     }
+// }

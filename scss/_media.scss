@@ -792,7 +792,7 @@
         color: #fff;
     }
     #active:checked ~ .menu-btn i:before {
-        content: "\f00d"; 
+        content: "\f00d";
         position: fixed;
     }
     .wrapper ul {
@@ -856,5 +856,11 @@
 
     .footer--modificatorr {
         padding: 0 !important;
+    }
+}
+
+@media (max-width: 1050px) {
+    .header__cart {
+        display: none !important;
     }
 }

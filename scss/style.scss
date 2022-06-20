@@ -251,9 +251,16 @@
 
 .navigation {
     padding-top: 27px;
-    padding-bottom: 30px;
+    padding-bottom: 27px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    background: #403c3b;
+    box-shadow: 0px 30px 60px rgba(34, 31, 32, 0.2);
 
     &__box {
         position: relative;
@@ -262,6 +269,10 @@
     &__list {
         display: flex;
         justify-content: space-between;
+    }
+
+    &__item {
+        margin-top: 15px;
     }
 
     &__links {
@@ -1138,7 +1149,7 @@
         width: 458px;
         height: 348px;
         position: fixed;
-        top: 50%;
+        top: 37%;
         left: 50%;
         background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
         border-radius: 10px;
