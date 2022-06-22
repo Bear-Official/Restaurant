@@ -8,13 +8,13 @@
     <meta name="description" content="Web Development">
     <meta name="keywords" content="HTML, CSS, JS">
     <meta name="author" content="Bear Official">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon.ico">
+    <link rel="icon" type="/image/png" sizes="32x32" href="favicon/favicon.ico">
     <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" href="../css/style.min.css">
     <link rel="stylesheet" href="../libs/font awesome/all.min.css">
     <link rel="stylesheet" type="text/css" href="../slick/slick.css" />
@@ -104,7 +104,6 @@
                             <li class="navigation__item">
                                 <a href="#" class="navigation__links">Гриль меню</a>
                             </li>
-
                             <li class="navigation__item">
                                 <a href="#" class="navigation__links">Фирменные блюда</a>
                             </li>
@@ -117,87 +116,146 @@
             </div>
             <!-- End Navigation -->
         </div>
-        <!-- Start order -->
-        <section class="order">
+
+        <!-- Start Chechout -->
+        <section class="checkout">
             <div class="container">
-                <div class="order__box">
-                    <a href="../index.html">
-                        <img src="../images/Arrow-order.png" class="order__arrow" alt="Arrow-order">
-                        <span class="order__back">в корзину</span>
-                    </a>
-                    <h1 class="order__header">Оформление заказа</h1>
-                    <div class="order__block">
-                        <h2 class="order__title">1. Контактная информация</h2>
-                        <form action="#" class="order__form">
-                            <input class="order__input" type="email" placeholder="Имя*">
-                            <input class="order__input" type="email" placeholder="Телефон*">
-                        </form>
-                    </div>
-                    <div class="order__block order--block">
-                        <h2 class="order__title">2. Доставка</h2>
-                        <div class="order__delivery">
+                <div class="checkout__center">
+                    <div class="chechout__box">
+                        <a href="/index.html">
+                            <img src="/images/check-arrow.png" class="checkout__img" alt="check-arrow">
+                            <span class="checkout__title">к выбору блюда</span>
+                        </a>
+                        <div class="checkout__block">
+                            <h1 class="checkout__header">КОРЗИНА</h1>
+                            <div class="checkout__product">(в корзине 3 товара)</div>
                         </div>
-                        <div class="livrary">
-                            <button class="button">Доставка</button>
-                            <button class="button active">Самовывоз</button>
-                        </div>
-                        <h2 class="order__title order--title">Выберите ресторан</h2>
-                        <select name="order" class="order__drop__down">
-                            <option value="" id="order__choose">Выберите ресторан</option>
-                            <option value="">ресторан1</option>
-                            <option value="">ресторан2</option>
-                            <option value="">ресторан3</option>
-                        </select>
-                    </div>
-                    <div class="order__block order--modificator">
-                        <h2 class="order__title">3. Оплатить</h2>
-                        <div class="livrary">
-                            <button class="button btn button--secondd">Оплата онлайн</button>
-                            <button class="button button--secondd btn--second active">Курьеру картой</button>
-                            <button class="button btn ">Наличными</button>
-                        </div>
-                    </div>
-                    <div class="when" id="when">
-                        <div class="when__block">
-                            <h2 class="order__title">4. Когда доставить</h2>
-                            <div class="livrary">
-                                <button class="button active">В ближайшее время</button>
-                                <button class="button">Ко времени</button>
+                        <div class="cart-wrapper">
+                            <div class="checkout__products checkout__count">
+                                <div class="checkout__inner">
+                                    <img src="/images/meat.jpg" class="checkout__meat" alt="chechout-meat">
+                                    <div class="checkout__blocker">
+                                        <h2 class="checkout__sup__title">ПИЦЦА ДВОЙНАЯ ПЕППЕРОНИ</h2>
+                                        <p class="checkout__description">
+                                            Кальмары, мидии, креветки, сыр маасдам, <br>
+                                            красный лук, микс оливок, базилик, соус песто
+                                        </p>
+                                    </div>
+                                    <div class="checkout__centerr">
+                                        <button type="submit" class="cold__snacks--btn checkout--btn"
+                                            data-action="minus"></button>
+                                        <div class="cold__snacks__count checkout__count" data-counter=value="1">1</div>
+                                        <button type="submit" class="cold__snacks--button checkout--button"
+                                            data-action="plus"></button>
+                                    </div>
+                                    <div class="checkout-inner">
+                                        <div class="checkout__price">1640 ₽</div>
+                                        <button type="submit"
+                                            class="cold__snacks--button checkout--button checkout__button remove-item"></button>
+                                    </div>
+                                </div>
                             </div>
-                            <button class="sub__button" type="submit">
-                                Кол-во персон
-                                <span class="minus">-</span>
-                                <input class="when__input" type="text" value="1" />
-                                <span class="plus">+</span>
-                            </button>
-                            <div class="when__call">
-                                <h2 class="order__title">Хотите мы позвоним?</h2>
-                                <form class="when__form">
-                                    <input id="color1" class="when__inputt" type="radio" id="html" name="fav_language"
-                                        value="HTML">
-                                    <label class="when__label" for="recall">Не перезванивать</label><br>
-                                    <input type="radio" id="css" name="fav_language" value="operator">
-                                    <label class="when__operator" for="operator">Потребуется звонок
-                                        оператора</label><br>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="agreement">
-                            <div class="agreement__block">
-                                <form class="agreement__form" action="order.html">
-                                    <input type="checkbox" class="agreement agreement--mod">
-                                    <p class="agreement__title">Я согласен на обработку моих перс. данных в
-                                        соответствии
-                                        с <span class="agreement__txt">Условиями</span></p>
-                                    <button class="agreement__btn" type="submit">Оформить заказ</button>
-                                </form>
+                            <div class="checkout__products">
+                                <div class="checkout__inner">
+                                    <img src="/images/meat.jpg" class="checkout__meat" alt="chechout-meat">
+                                    <div class="checkout__blocker">
+                                        <h2 class="checkout__sup__title">ПИЦЦА ДВОЙНАЯ ПЕППЕРОНИ</h2>
+                                        <p class="checkout__description">
+                                            Кальмары, мидии, креветки, сыр маасдам, <br>
+                                            красный лук, микс оливок, базилик, соус песто
+                                        </p>
+                                    </div>
+                                    <div class="checkout__centerr checkout--count" data-counter>
+                                        <button type="submit" class="cold__snacks--btn checkout--btn"
+                                            data-action="minus"></button>
+                                        <div class="cold__snacks__count checkout__count" data-counter=value="1">1</div>
+                                        <button type="submit" class="cold__snacks--button checkout--button"
+                                            data-action="plus"></button>
+                                    </div>
+                                    <div class="checkout-inner">
+                                        <div class="checkout__price">1640 ₽</div>
+                                        <button type="submit"
+                                            class="cold__snacks--button checkout--button checkout__button remove-item"></button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+
+        </section>
+        <!-- End Checkout -->
+        <section class="cold__snacks">
+            <div class="cold__snacks__box">
+                <div class="cart-wrapper">
+                    <div class="container">
+                        <h1 class="cold__snacks__title checkout--title">ДОБАВИТЬ К ЗАКАЗУ</h1>
+                        <div class="cart-inner">
+                            <div class="checkout__item">
+                                <img src="../images/meat.jpg" class="kitchen__img" alt="">
+                                <div class="checkout__wrap">
+                                    <h3 class="checkout_title">КВАС АНАНАСОВЫЙ</h3>
+                                    <div class="checkout_center">
+                                        <span class="checkout__sub__text">Добавить</span>
+                                        <img src="../images/button.png" class="checkout__image" alt="">
+                                        <span class="checkout__rate">1640 ₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout__item">
+                                <img src="../images/meat.jpg" class="kitchen__img" alt="">
+                                <div class="checkout__wrap">
+                                    <h3 class="checkout_title">КВАС АНАНАСОВЫЙ</h3>
+                                    <div class="checkout_center">
+                                        <span class="checkout__sub__text">Добавить</span>
+                                        <img src="../images/button.png" class="checkout__image" alt="">
+                                        <span class="checkout__rate">1640 ₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout__item">
+                                <img src="../images/meat.jpg" class="kitchen__img" alt="">
+                                <div class="checkout__wrap">
+                                    <h3 class="checkout_title">КВАС АНАНАСОВЫЙ</h3>
+                                    <div class="checkout_center">
+                                        <span class="checkout__sub__text">Добавить</span>
+                                        <img src="../images/button.png" class="checkout__image" alt="">
+                                        <span class="checkout__rate">1640 ₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout__item">
+                                <img src="../images/meat.jpg" class="kitchen__img" alt="">
+                                <div class="checkout__wrap">
+                                    <h3 class="checkout_title">КВАС АНАНАСОВЫЙ</h3>
+                                    <div class="checkout_center">
+                                        <span class="checkout__sub__text">Добавить</span>
+                                        <img src="../images/button.png" class="checkout__image" alt="">
+                                        <span class="checkout__rate">1640 ₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="check__order">
+                            <div class="check__order__inner">
+                                <div class="check__order__content">
+                                    <h2 class="check__order-title">
+                                        Итого:
+                                        <span class="check__order__color">500 ₽</span>
+                                    </h2>
+                                    <p class="check__order__text">
+                                        До бесплатной доставки не хватет:
+                                        <span class="check__order-color">100 ₽</span>
+                                    </p>
+                                    <span class="check__order__description">Минимальная сума заказа 1500 ₽</span>
+                                </div>
+                                <a href="order.html" class="check__order__button" type="submit">Оформить заказ</a>
+                            </div>
+                        </div>
+                    </div>
         </section>
     </main>
+
 
     <!-- Start Footer -->
     <footer class="footer">
@@ -255,7 +313,7 @@
         <div class="modal__content">
             <img src="../images/illustration.png" class="modal__img" alt="illustration">
             <a href="#" class="modal__btn">
-                <img src="../images/btn-close.png" alt="btn-close" class="modal__close">
+                <img src="/images/btn-close.png" alt="btn-close" class="modal__close">
             </a>
             <span class="modal__text">КОРЗИНА ПУСТАЯ</span>
             <button type="submit" class="modal__button">Посмотреть меню</button>
@@ -263,10 +321,10 @@
     </div>
 
     <script src="../javascript/main.min.js"></script>
-    <script src="/javascript/jquery-3.6.0.min.js"></script>
+    <script src="../javascript/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="../slick/slick.min.js"></script>
 </body>
 
 </html>
