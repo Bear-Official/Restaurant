@@ -123,6 +123,7 @@ $(".checkout__inner").on("click", ".remove-item", function () {
 
 const innerWrapper = document.querySelector(".cart-wrapper");
 
+
 // We add products in basket
 window.addEventListener("click", function (event) {
     if (event.target.hasAttribute("data-cart")) {
@@ -173,7 +174,7 @@ window.addEventListener("click", function (event) {
                                         </div> `;
 
         // Отобразим товар в корзине
-        innerWrapper.insertAdjacentHTML("beforeend", cartItemHTML);
+         innerWrapper.insertAdjacentHTML("beforeend", cartItemHTML); 
     }
 });
 
