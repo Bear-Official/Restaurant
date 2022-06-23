@@ -10,6 +10,22 @@
     .cold__snacks--title::after {
         width: 125% !important;
     }
+
+    .slick-next {
+        display: none !important;
+    }
+
+    .slick-prev {
+        display: none !important;
+    }
+
+    .card {
+        padding: 0 8px !important;
+    }
+
+    .carousel .carousel__title {
+        font-size: 30px;
+    }
 }
 
 // @LaptopL
@@ -468,6 +484,10 @@
             }
         }
     }
+
+    .carousel .carousel__title {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 580px) {
@@ -637,7 +657,7 @@
 
     .slider__img {
         max-width: 221%;
-        margin-left: -34px;
+        margin-left: 5px;
         overflow: hidden;
     }
 }

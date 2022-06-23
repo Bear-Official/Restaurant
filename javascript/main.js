@@ -2,15 +2,15 @@
 
 $(document).ready(function () {
     $(".swiper-wrapper").slick({
-        slidesToShow: 3,
-        slidesToScroll: 4,
+        slidesToShow: 4,
+        slidesToScroll: 2,
         infinite: true,
         arrows: true,
         variableWidth: true,
         adaptiveHeight: true,
+        speed: 355,
     });
 });
-
 
 // data-toggle="modal" Modal windows
 // $(document).ready(function () {
@@ -35,7 +35,6 @@ $(document).ready(function () {
 //     }
 // });
 
-
 // Option
 
 var btnContainer = document.getElementsByClassName("livrary");
@@ -51,12 +50,11 @@ for (let j = 0; j < btnContainer.length; j++) {
     }
 }
 
-
 // Basket
 
-let basketCounter = 0
+let basketCounter = 0;
 
-localStorage.setItem("basketCounter", basketCounter)
+localStorage.setItem("basketCounter", basketCounter);
 
 // Animation
 
@@ -76,7 +74,8 @@ window.onscroll = function () {
     }
 };
 
-{/* <div class="cold__snacks__count">
+{
+    /* <div class="cold__snacks__count">
 <span class="cold__snacks--count">2</span>
 </div>
 <div class="cold__snacks__block">
@@ -96,4 +95,5 @@ window.onscroll = function () {
             data-action="minus"></button>
     </div>
 </div>
-</div> */}
+</div> */
+}
