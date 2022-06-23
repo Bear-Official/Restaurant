@@ -189,8 +189,6 @@
 
 .swiper-slide {
     position: relative;
-    padding: 0 10px;
-    width: 325px;
 }
 
 .slider {
@@ -321,7 +319,7 @@
     border-top-right-radius: 10px;
 }
 // Started Cold snacks
-.cold__snacks {
+.carousel {
     padding-top: 50px;
     padding-bottom: 50px;
 
@@ -338,11 +336,11 @@
         margin-bottom: 50px;
     }
 
-    .cold__snacks--title {
+    .carousel--title {
         position: relative;
     }
 
-    .cold__snacks--title::after {
+    .carousel--title::after {
         content: "";
         position: absolute;
         display: block;
@@ -406,7 +404,7 @@
         color: #ffffff;
     }
 
-    .cold__snacks__title::before {
+    .carousel__title::before {
         position: absolute;
         content: "";
         display: block;
@@ -500,7 +498,7 @@
         align-items: center;
     }
 
-    .cold__snacks__button::before {
+    .carousel__button::before {
         position: absolute;
         content: "";
         display: block;
@@ -527,7 +525,7 @@
         border-radius: 10px;
     }
 
-    .cold__snacks--btnn {
+    .carousel--btnn {
         cursor: pointer;
         width: 62px;
         height: 44px;
@@ -539,7 +537,7 @@
         border-radius: 10px;
     }
 
-    .cold__snacks--btn::after {
+    .carousel--btn::after {
         position: absolute;
         content: "";
         display: block;
@@ -551,7 +549,7 @@
         background-position: center;
     }
 
-    .cold__snacks--btnn::before {
+    .carousel--btnn::before {
         position: absolute;
         content: "";
         display: block;
@@ -978,8 +976,8 @@
 
 // Start Products
 .products {
-    margin-top: 44px;
-    margin-bottom: 50px;
+    padding-top: 44px;
+    padding-bottom: 50px;
 
     &__txt {
         vertical-align: super;
@@ -2301,4 +2299,9 @@
         justify-content: center;
         align-items: center;
     }
+}
+
+.card {
+    padding: 0 10px;
+    width: 325px;
 }
