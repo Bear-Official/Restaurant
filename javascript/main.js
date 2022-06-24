@@ -8,7 +8,6 @@ $(document).ready(function () {
         arrows: true,
         variableWidth: true,
         adaptiveHeight: true,
-        speed: 355,
     });
 });
 
