@@ -586,7 +586,7 @@
 
 @media (max-width: 670px) {
     .slick-track {
-        left: 0 !important;
+        left: 0px !important; 
     }
 
     .swiper-slide {
@@ -659,7 +659,9 @@
         max-width: 221%;
         margin-left: 5px;
         overflow: hidden;
-    }
+    } 
+
+    
 }
 
 @media (max-width: 354px) {
