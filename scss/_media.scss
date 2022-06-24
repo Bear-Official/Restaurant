@@ -81,6 +81,10 @@
         font-size: 17px !important;
         padding-left: 20px !important;
     }
+
+    .carousel .carousel__title::before {
+        left: -11px !important;
+    }
 }
 
 @media (max-width: 1257px) {
@@ -586,7 +590,7 @@
 
 @media (max-width: 670px) {
     .slick-track {
-        left: 0 !important;
+        left: 0px !important;
     }
 
     .swiper-slide {

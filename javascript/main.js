@@ -1,5 +1,4 @@
 //  Slick slider
-
 $(document).ready(function () {
     $(".swiper-wrapper").slick({
         slidesToShow: 4,
@@ -8,7 +7,15 @@ $(document).ready(function () {
         arrows: true,
         variableWidth: true,
         adaptiveHeight: true,
-        speed: 355,
+
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    centerMode: true,
+                },
+            },
+        ],
     });
 });
 
