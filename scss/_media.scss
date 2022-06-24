@@ -2,8 +2,7 @@
     i,
     .menu__button {
         display: none !important;
-    } 
-
+    }
 }
 
 //  @Large screens
@@ -81,6 +80,10 @@
     .footer__links {
         font-size: 17px !important;
         padding-left: 20px !important;
+    }
+
+    .carousel .carousel__title::before {
+        left: -11px !important;
     }
 }
 
@@ -587,7 +590,7 @@
 
 @media (max-width: 670px) {
     .slick-track {
-        left: 0px !important; 
+        left: 0px !important;
     }
 
     .swiper-slide {
@@ -660,9 +663,7 @@
         max-width: 221%;
         margin-left: 5px;
         overflow: hidden;
-    } 
-
-    
+    }
 }
 
 @media (max-width: 354px) {
