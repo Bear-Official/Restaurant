@@ -78,7 +78,6 @@
         </div>
         <!-- End header -->
     </header>
-
     <main class="page">
         <!-- Start Navigation -->
         <div class="navigation">
@@ -126,20 +125,42 @@
                         <span class="order__back">в корзину</span>
                     </a>
                     <h1 class="order__header">Оформление заказа</h1>
+                    <div class="order__out">
+                        <div class="order__flex">
+                            <div class="order-wrap">
+                                <h1 class="order-header">Сегодня мы уже не доставляем.</h1>
+                                <span class="order-out__title">Заказы принимаем до 20:50, доставляем с 8:30 до
+                                    21:30</span>
+                                <img src="images/out-of-timepng.png" class="" alt="">
+                            </div>
+                            <img src="images/sleep.png" class="sleep" alt="">
+                        </div>
+
+                    </div>
                     <div class="order__block">
                         <h2 class="order__title">1. Контактная информация</h2>
                         <form action="#" class="order__form">
-                            <input class="order__input" type="email" placeholder="Имя*">
-                            <input class="order__input" type="email" placeholder="Телефон*">
+                            <input class="order__input" type="text" placeholder="Имя*">
+                            <input class="order__input" type="text" placeholder="Телефон*">
                         </form>
                     </div>
                     <div class="order__block order--block">
                         <h2 class="order__title">2. Доставка</h2>
+                        <div class="order-livrary__block">
+                        </div>
                         <div class="order__delivery">
                         </div>
                         <div class="livrary">
                             <button class="button">Доставка</button>
                             <button class="button active">Самовывоз</button>
+                        </div>
+                        <div class="order-block__livrary">
+                            <input class="order__input order--one" type="text" placeholder="Укажите улицу*">
+                            <input class="order__input order--two" type="text" placeholder="Номер дома*">
+                            <input class="order__input order--three" type="text" placeholder="№ квартиры/офиса*">
+                            <input class="order__input order--four" type="text" placeholder="Подъезд*">
+                            <input class="order__input order--four" type="text" placeholder="Этаж*">
+                            <input class="order__input order--five" type="text" placeholder="Комментарий*">
                         </div>
                         <h2 class="order__title order--title">Выберите ресторан</h2>
                         <select name="order" class="order__drop__down">
@@ -152,10 +173,15 @@
                     <div class="order__block order--modificator">
                         <h2 class="order__title">3. Оплатить</h2>
                         <div class="livrary">
-                            <button class="button btn button--secondd">Оплата онлайн</button>
-                            <button class="button button--secondd btn--second active">Курьеру картой</button>
-                            <button class="button btn ">Наличными</button>
+                            <div class="livrary__grid">
+                                <button class="button btn button--secondd">Оплата онлайн</button>
+                                <button class="button button--secondd btn--second active">Курьеру картой</button>
+                                <button class="button btn button--secondd">Наличными</button>
+                                <img src="images/clock.png" class="clock" alt="">
+                                <span class="livrary__time">Доставим через 1 час 30 минут</span>
+                            </div>
                         </div>
+                        <input class="order__input order--four" type="text" placeholder="Сдача с*">
                     </div>
                     <div class="when" id="when">
                         <div class="when__block">
@@ -163,6 +189,7 @@
                             <div class="livrary">
                                 <button class="button active">В ближайшее время</button>
                                 <button class="button">Ко времени</button>
+                                <button class="button">Наличными</button>
                             </div>
                             <button class="sub__button" type="submit">
                                 Кол-во персон

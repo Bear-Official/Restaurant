@@ -240,6 +240,10 @@
     .promo .promo__inner {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .order__out {
+        display: none;
+    }
 }
 
 // @Tablet
@@ -827,10 +831,6 @@
         display: flex;
         align-items: flex-end;
     }
-
-    .order .button {
-        width: 130px !important;
-    }
 }
 
 @media (max-width: 598px) {
@@ -1034,5 +1034,17 @@
 
     .checkout__count {
         margin-left: -5px;
+    }
+}
+
+@media (max-width: 846px) {
+    .order-block__livrary {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .clock,
+    .livrary__time {
+        display: none;
     }
 }
