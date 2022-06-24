@@ -322,24 +322,108 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-// Started Cold snacks
-.carousel {
+
+.item {
     padding-top: 50px;
     padding-bottom: 50px;
 
+    &_block--second {
+        height: 184px;
+        padding-left: 20px;
+        padding-right: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_block {
+        width: 100%;
+        background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
+        border-radius: 10px;
+        margin-top: -19px;
+        padding-top: 40px;
+        width: 100%;
+        box-sizing: border-box;
+        transition: all 1s;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     &__title {
-        position: relative;
         font-family: "Gilroy-SemiBold";
         font-style: normal;
         font-weight: 700;
-        font-size: 32px;
-        line-height: 39px;
-        text-transform: uppercase;
+        font-size: 22px;
+        line-height: 27px;
         color: #ffffff;
-        padding-left: 19px;
-        margin-bottom: 50px;
+        margin-bottom: 5px;
     }
 
+    &__weight {
+        font-family: "Gilroy-Light";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #ffffff;
+    }
+
+    &__description {
+        width: 249px;
+        font-family: "Gilroy-Regular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 17px;
+        color: #cfcfcf;
+        margin-bottom: 32px;
+    }
+
+    &__buy {
+        position: relative;
+        cursor: pointer;
+        width: 137px;
+        height: 44px;
+        font-family: "Gilroy-SemiBold";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        border: none;
+        background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
+        border-radius: 10px;
+        color: white;
+        justify-content: space-between;
+        display: flex;
+        padding-left: 19px;
+        align-items: center;
+    }
+
+    &__buy::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 20px;
+        height: 18px;
+        right: 19px;
+        background-image: url(../images/basket.svg);
+        background-repeat: no-repeat;
+    }
+
+    &__price {
+        font-family: "Gilroy-Regular";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #ffffff;
+    }
+}
+
+.carousel {
     .carousel--title {
         position: relative;
     }
@@ -358,42 +442,6 @@
         );
         margin-top: -82px;
         margin-left: -354px;
-    }
-
-    .cold-snacks--mod {
-        margin-top: 48px;
-    }
-
-    &__count {
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        background-color: #79b382;
-        border-radius: 50%;
-        right: 1px;
-        top: 0;
-        text-align: center;
-        color: white;
-        margin-top: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    &__input {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        font-size: 35px;
-        text-align: center;
-        background: #79b382;
-        color: white;
-        border: none;
-        font-family: "Gilroy-Regular";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 24px;
     }
 
     &--count {
@@ -420,100 +468,17 @@
         top: 19px;
     }
 
-    &__block--second {
-        height: 184px;
-        padding-left: 20px;
-        padding-right: 16px;
-    }
-
-    &__block {
-        width: 100%;
-        background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
-        border-radius: 10px;
-        margin-top: -19px;
-        padding-top: 40px;
-        width: 100%;
-        box-sizing: border-box;
-        transition: all 1s;
-    }
-
-    &__header {
+    &__title {
+        position: relative;
         font-family: "Gilroy-SemiBold";
         font-style: normal;
         font-weight: 700;
-        font-size: 22px;
-        line-height: 27px;
+        font-size: 32px;
+        line-height: 39px;
+        text-transform: uppercase;
         color: #ffffff;
-        margin-bottom: 5px;
-    }
-
-    &__gram {
-        font-family: "Gilroy-Light";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
-        color: #ffffff;
-    }
-
-    &--space {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    &__sub {
-        width: 249px;
-        font-family: "Gilroy-Regular";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 17px;
-        color: #cfcfcf;
-        margin-bottom: 32px;
-    }
-
-    &--price {
-        font-family: "Gilroy-Regular";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 24px;
-        color: #ffffff;
-    }
-
-    &__button {
-        position: relative;
-        cursor: pointer;
-        width: 137px;
-        height: 44px;
-        font-family: "Gilroy-SemiBold";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 17px;
-        border: none;
-        background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
-        border-radius: 10px;
-        color: white;
-        justify-content: space-between;
-        display: flex;
         padding-left: 19px;
-        align-items: center;
-    }
-
-    .carousel__button::before {
-        position: absolute;
-        content: "";
-        display: block;
-        width: 20px;
-        height: 18px;
-        right: 19px;
-        background-image: url(../images/basket.svg);
-        background-repeat: no-repeat;
-    }
-
-    &--spacee {
+        margin-bottom: 50px;
         margin-top: 50px;
     }
 
@@ -564,20 +529,42 @@
         background-repeat: no-repeat;
         background-position: center;
     }
-
-    &--sub {
-        width: auto;
+    &__count {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: #79b382;
+        border-radius: 50%;
+        right: 1px;
+        top: 0;
+        text-align: center;
+        color: white;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    &--mood {
-        margin-top: 36px !important;
+    &__input {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 35px;
+        text-align: center;
+        background: #79b382;
+        color: white;
+        border: none;
+        font-family: "Gilroy-Regular";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
     }
-
     .slick-track {
         left: 30px;
     }
-    // End Cold Snacks
 }
+
 // Start Coffee
 .coffee {
     padding-top: 100px;
@@ -1981,8 +1968,8 @@
         font-weight: 500;
         font-size: 15px;
         line-height: 18px;
-        text-transform: lowercase;
         color: #72a479;
+        padding-bottom: 10px;
     }
 
     &__inner {

@@ -12,29 +12,6 @@ $(document).ready(function () {
     });
 });
 
-// data-toggle="modal" Modal windows
-// $(document).ready(function () {
-//     var modalButton = $("[data-toggle=modal]");
-//     var closeModalButton = $(".modal__close");
-//     modalButton.on("click", openModal);
-//     closeModalButton.on("click", closeModal);
-
-//     function openModal() {
-//         var modalOverlay = $(".modal__overlay");
-//         var modalContent = $(".modal__content");
-//         modalOverlay.addClass("modal__overlay--visible");
-//         modalContent.addClass("modal__content--visible");
-//     }
-
-//     function closeModal(event) {
-//         event.preventDefault();
-//         var modalOverlay = $(".modal__overlay");
-//         var modalContent = $(".modal__content");
-//         modalOverlay.removeClass("modal__overlay--visible");
-//         modalContent.removeClass("modal__content--visible");
-//     }
-// });
-
 // Option
 
 var btnContainer = document.getElementsByClassName("livrary");
@@ -49,30 +26,6 @@ for (let j = 0; j < btnContainer.length; j++) {
         });
     }
 }
-
-// Basket
-
-let basketCounter = 0;
-
-localStorage.setItem("basketCounter", basketCounter);
-
-// Animation
-
-let navigation = document.getElementsByClassName("navigation")[0];
-let cart = document.getElementsByClassName("header--cart")[0];
-
-window.onscroll = function () {
-    if (
-        document.body.scrollTop > 550 ||
-        document.documentElement.scrollTop > 550
-    ) {
-        navigation.style = "position: sticky;";
-        cart.className = "header__cart header--cart activ";
-    } else {
-        navigation.style = "";
-        cart.className = " header__cart header--cart";
-    }
-};
 
 {
     /* <div class="cold__snacks__count">
