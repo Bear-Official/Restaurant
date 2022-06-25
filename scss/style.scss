@@ -1784,6 +1784,15 @@
 
     &__inputt {
         margin-bottom: 20px;
+        accent-color: #72a479;
+    }
+
+    #css {
+        accent-color: #72a479;
+    }
+
+    input[type="checkbox"]:checked {
+        accent-color: white;
     }
 
     .color1 {
