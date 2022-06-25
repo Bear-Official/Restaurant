@@ -2450,6 +2450,7 @@
     padding-top: 52px;
     padding: 46px 28px;
     margin-bottom: 23px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .order-header {
@@ -2492,7 +2493,6 @@
 }
 
 .navigation__item:nth-child(7)::after {
-    // background: linear-gradient(91deg, rgba(64, 60, 59, 1) 9%, rgb(54 54 54) 70%);
     background-image: url(../images/text-gt.png);
     position: absolute;
     display: block;
