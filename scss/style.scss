@@ -161,8 +161,8 @@
         font-weight: 600;
         font-size: 12px;
         line-height: 17px;
-        color: #403c3b;
-        padding-right: 20px;
+        color: #72a479;
+        padding-right: 12px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -292,6 +292,7 @@
 
     &__cart {
         background-color: #403c3b;
+        z-index: 1;
     }
 
     &__links {
@@ -424,6 +425,10 @@
 }
 
 .carousel {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     .carousel--title {
         position: relative;
     }
@@ -1967,7 +1972,7 @@
         font-size: 15px;
         line-height: 18px;
         color: #72a479;
-        padding-bottom: 10px;
+        white-space: nowrap;
     }
 
     &__inner {
@@ -2160,6 +2165,11 @@
     &_center {
         text-align: center;
     }
+
+    .checkout--inline {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .activ {
@@ -2204,13 +2214,15 @@
 }
 
 .check__order {
-    max-width: 763px;
+    max-width: 100%;
+    width: 763px;
     height: 105px;
     background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
     border-radius: 10px;
     margin-top: 79px !important;
     margin: auto;
     padding: 20px 36px;
+    padding-bottom: 89px;
 
     &__inner {
         display: flex;
@@ -2469,4 +2481,24 @@
 .sleep {
     object-fit: contain;
     margin-top: -19px;
+}
+
+.check-order__wrap {
+    // margin-bottom: 90px;
+}
+
+.carousel:last-child {
+    border-bottom: none;
+}
+
+.navigation__item:nth-child(7)::after {
+    // background: linear-gradient(91deg, rgba(64, 60, 59, 1) 9%, rgb(54 54 54) 70%);
+    background-image: url(../images/text-gt.png);
+    position: absolute;
+    display: block;
+    content: "";
+    width: 162px;
+    height: 36px;
+    margin-top: -29px;
+    background-size: 162px;
 }

@@ -951,6 +951,10 @@
     .footer--modificatorr {
         padding: 0 !important;
     }
+
+    .cart-wrapper {
+        padding: 0 5px !important;
+    }
 }
 
 @media (max-width: 1050px) {
@@ -996,6 +1000,10 @@
 @media (max-width: 389px) {
     .checkout .checkout__meat {
         width: 110px;
+    } 
+
+    .checkout__product { 
+        font-size: 13px !important;
     }
 
     .checkout .checkout__inner {
