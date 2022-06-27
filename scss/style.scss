@@ -2493,15 +2493,12 @@
     margin-top: -19px;
 }
 
-.check-order__wrap {
-    // margin-bottom: 90px;
-}
-
 .carousel:last-child {
     border-bottom: none;
 }
 
 .navigation__item:nth-child(7)::after {
+    cursor: pointer;
     background-image: url(../images/text-gt.png);
     position: absolute;
     display: block;
