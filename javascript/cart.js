@@ -30,8 +30,7 @@ function addToCart() {
         itemDescription = parentBox.querySelector('.item__description').innerHTML,
         itemImageUrl = parentBox.querySelector('.kitchen').src;
 
-    cartData.push([itemId, itemTitle, itemPrice, itemDescription, itemImageUrl]);
-
+    cartData.push([itemId, itemTitle, itemPrice, itemDescription, itemImageUrl, 1]);
     setCartData(cartData)
     productsQuantity()
 }
@@ -94,16 +93,10 @@ function generateCartProduct() {
 
 function removeProducts(productParent) {
     cartData = getCartData()
-    console.log(productParent)
-
     for (let i = 0; i < cartData.length; i++) {
         if (productParent.dataset.id == cartData[i][0]) {
             cartData.pop()
-            console.log(cartData[i]);
-            console.log(productParent.dataset.id)
-
         }
-
     }
     productParent.remove()
     setCartData(cartData)
@@ -127,5 +120,5 @@ try {
 // Add Click Event on Every Basket button
 for (var i = 0; i < itemBox.length; i++) {
     itemBox[i].addEventListener("click", addToCart)
-
 }
+
