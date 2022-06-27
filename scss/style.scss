@@ -974,7 +974,7 @@
 .products {
     &__txt {
         vertical-align: super;
-        font-family: "Gilroy";
+        font-family: "Gilroy-SemiBold";
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
@@ -991,13 +991,13 @@
 
     &__inner {
         display: flex;
+        margin-bottom: 50px;
     }
 
     &__block {
         width: 608px;
         height: 400px;
         background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
-        border-radius: 10px;
         padding-left: 50px;
         padding-top: 38px;
         padding-bottom: 25px;
@@ -1005,7 +1005,7 @@
     }
 
     &__title {
-        font-family: "Gilroy";
+        font-family: "Gilroy-Medium";
         font-style: normal;
         font-weight: 700;
         font-size: 25px;
@@ -1025,7 +1025,7 @@
     }
 
     &__weight {
-        font-family: "Gilroy";
+        font-family: "Gilroy-Regular";
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -1043,7 +1043,7 @@
         background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
         border-radius: 10px;
         border: none;
-        font-family: "Gilroy";
+        font-family: "Gilroy-Regular";
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
@@ -1082,7 +1082,7 @@
     }
 
     &__price {
-        font-family: "Gilroy";
+        font-family: "Gilroy-Medium";
         font-style: normal;
         font-weight: 700;
         font-size: 25px;
@@ -1099,7 +1099,7 @@
     }
 
     &__link {
-        font-family: "Gilroy";
+        font-family: "Gilroy-Regular";
         font-style: normal;
         font-weight: 300;
         font-size: 12px;
@@ -1995,6 +1995,7 @@
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
+
     &__meat {
         width: 117px;
         height: 86px;
@@ -2497,14 +2498,7 @@
     border-bottom: none;
 }
 
-.navigation__item:nth-child(7)::after {
-    cursor: pointer;
-    background-image: url(../images/text-gt.png);
-    position: absolute;
-    display: block;
-    content: "";
-    width: 162px;
-    height: 36px;
-    margin-top: -29px;
-    background-size: 162px;
+.products__block:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
