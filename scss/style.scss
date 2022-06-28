@@ -148,6 +148,10 @@
     }
 }
 
+#active {
+    display: none;
+}
+
 .cart {
     &__title {
         font-family: "Gilroy-SemiBold";
