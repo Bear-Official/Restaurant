@@ -56,7 +56,8 @@
     }
 
     .conditions {
-        padding-bottom: 900px !important;
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
     }
 
     .products__img {
@@ -85,6 +86,14 @@
     .carousel .carousel__title::before {
         left: -11px !important;
     }
+
+    .conditions__accordion {
+        padding: 0 5px;
+    }
+    .accordion__title {
+        min-width: 100% !important;
+        width: 100% !important;
+    }
 }
 
 @media (max-width: 1257px) {
@@ -98,6 +107,36 @@
         display: flex;
         order: -1;
         margin-bottom: 3rem;
+    }
+
+    .conditions__inner {
+        flex-wrap: wrap;
+    }
+
+    .conditions .conditions__image {
+        margin-left: -30px;
+    }
+
+    .conditions__inner {
+        justify-content: center;
+    }
+
+    .conditions__order {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conditions__column {
+        display: flex;
+        justify-content: center;
+    }
+
+    .conditions__order__title {
+        display: flex;
+        align-self: center;
+        align-items: center;
+        // margin-left: 265px;
     }
 }
 
@@ -119,6 +158,9 @@
 @media (max-width: 1024px) {
     .coffee__description {
         width: 350px !important;
+    }
+    .conditions .conditions__image {
+        margin-left: 0 !important;
     }
 }
 
@@ -151,7 +193,7 @@
 }
 
 @media (max-width: 939px) {
-    .footer--right {
+    .footer__inner {
         display: -webkit-box !important;
     }
 
@@ -161,7 +203,7 @@
 }
 
 @media (max-width: 876px) {
-    .coffee--right {
+    .coffee__inner {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -204,7 +246,7 @@
 }
 
 @media (max-width: 844px) {
-    .footer--right {
+    .footer__inner {
         flex-wrap: wrap;
     }
 
@@ -234,11 +276,35 @@
     .map {
         background-position: -413px 4px !important;
     }
+
+    .header__cart--bottom {
+        display: none !important;
+    }
+
+    .navigation__cart::before {
+        display: none !important;
+    }
 }
 
 @media (max-width: 767px) {
     .promo .promo__inner {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product__description {
+        display: none;
+    }
+
+    .product__inner {
+        justify-content: flex-start !important;
+    }
+
+    .checkout .product__price {
+        margin-left: 30px;
+    }
+
+    .checkout .product__price {
+        margin-right: 15px !important;
     }
 
     .order__out {
@@ -248,7 +314,7 @@
 
 // @Tablet
 @media (max-width: 716px) {
-    .footer--right {
+    .footer__inner {
         display: flex !important;
         flex-direction: column !important;
     }
@@ -294,7 +360,7 @@
 
 // @Phone
 @media (max-width: 600px) {
-    .coffee--grid {
+    .coffee__inner {
         grid-template-columns: repeat(1, 1fr) !important;
         place-items: center;
     }
@@ -304,10 +370,6 @@
 
     .products__img {
         height: 100% !important;
-    }
-
-    .conditions {
-        padding-bottom: 1300px !important;
     }
 
     .modal .modal__content {
@@ -382,13 +444,15 @@
 
     .header .header__cart--title {
         position: relative;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 14px;
-        text-transform: lowercase;
         padding-left: 0;
         padding-top: 25px;
+        font-family: "Gilroy-Regular";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        color: #ffffff;
+        text-transform: lowercase;
     }
     .header__cart--title::before {
         position: absolute;
@@ -496,6 +560,15 @@
     .carousel .carousel__title {
         font-size: 22px;
     }
+
+    .conditions_inner {
+        flex-direction: column;
+        padding: 0 5px;
+    }
+
+    .conditions__order__title {
+        align-self: flex-start !important;
+    }
 }
 
 @media (max-width: 580px) {
@@ -512,7 +585,7 @@
         left: -11px !important;
     }
 
-    .map__between {
+    .map_inner {
         flex-direction: column;
     }
 
@@ -603,7 +676,7 @@
 }
 
 @media (max-width: 988px) {
-    .header .header__center {
+    .header .header__inner {
         display: flex;
         flex-wrap: wrap;
     }
@@ -650,10 +723,6 @@
     .conditions .conditions__title {
         font-size: 25px;
     }
-
-    // .conditions {
-    //     padding-bottom: 1080px !important;
-    // }
 
     .products__item {
         margin-right: 21px !important;
@@ -718,12 +787,6 @@
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1257px) {
-    .conditions {
-        padding-left: 250px;
-    }
-}
-
 @media (max-width: 579px) {
     .promo .promo__inner {
         grid-template-columns: repeat(1, 1fr);
@@ -733,14 +796,25 @@
 
 @media (max-width: 500px) {
     .conditions .conditions__image {
-        object-fit: contain;
+        object-fit: cover;
         margin-bottom: 15px;
+        width: 346px;
+        max-width: 100%;
+        padding: 0 5px;
+    }
+
+    .conditions .conditions__image {
+        height: 290px;
     }
 }
 
 @media (max-width: 480px) {
     .conditions .conditions__sub__text::after {
         right: 7px !important;
+    }
+    .accordion__title {
+        padding: 0 5px 0 10px !important;
+        font-size: 16px !important;
     }
 }
 
@@ -811,6 +885,14 @@
 
     .checkout .checkout__button {
         margin-left: -50px;
+    }
+
+    .product__inner {
+        justify-content: flex-end !important;
+    }
+
+    .checkout .product__title {
+        margin-right: 50px;
     }
 }
 
@@ -964,18 +1046,8 @@
 }
 
 @media (max-width: 601px) {
-    .conditions {
-        padding-bottom: 1300px !important;
-    }
-
     .navigation {
         position: static !important;
-    }
-}
-
-@media (max-width: 838px) {
-    .checkout .checkout__blocker {
-        max-width: 0.33333%;
     }
 }
 
@@ -1000,18 +1072,14 @@
 @media (max-width: 389px) {
     .checkout .checkout__meat {
         width: 110px;
-    } 
+    }
 
-    .checkout__product { 
+    .checkout__product {
         font-size: 13px !important;
     }
 
     .checkout .checkout__inner {
         padding: 19px 5px;
-    }
-
-    .checkout .checkout__blocker {
-        max-width: 0.11111%;
     }
 }
 

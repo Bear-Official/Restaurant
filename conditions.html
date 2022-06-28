@@ -23,7 +23,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__center">
+            <div class="header__inner">
                 <button class="menu__button">
                     <nav class="footer__nav">
                         <input type="checkbox" id="active">
@@ -82,110 +82,136 @@
         <section class="conditions">
             <div class="container">
                 <a class="button__back" href="index.html">
-                    <svg width="26" class="products__svg" height="26" viewBox="0 0 26 26" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="13" cy="13" r="13" fill="url(#paint0_linear_8362_1137)" />
-                        <path
-                            d="M9.46967 12.4697C9.17678 12.7626 9.17678 13.2374 9.46967 13.5303L14.2426 18.3033C14.5355 18.5962 15.0104 18.5962 15.3033 18.3033C15.5962 18.0104 15.5962 17.5355 15.3033 17.2426L11.0607 13L15.3033 8.75736C15.5962 8.46447 15.5962 7.98959 15.3033 7.6967C15.0104 7.40381 14.5355 7.40381 14.2426 7.6967L9.46967 12.4697ZM11 12.25L10 12.25L10 13.75L11 13.75L11 12.25Z"
-                            fill="white" />
-                        <defs>
-                            <linearGradient id="paint0_linear_8362_1137" x1="1.25806" y1="1.47727" x2="29.0993"
-                                y2="14.4163" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#618967" />
-                                <stop offset="1" stop-color="#72A479" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                    <span class="back-button">Вернуться назад</span>
+                    <div class="condtions__wrapp">
+                        <svg width="26" class="products__svg" height="26" viewBox="0 0 26 26" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="13" cy="13" r="13" fill="url(#paint0_linear_8362_1137)" />
+                            <path
+                                d="M9.46967 12.4697C9.17678 12.7626 9.17678 13.2374 9.46967 13.5303L14.2426 18.3033C14.5355 18.5962 15.0104 18.5962 15.3033 18.3033C15.5962 18.0104 15.5962 17.5355 15.3033 17.2426L11.0607 13L15.3033 8.75736C15.5962 8.46447 15.5962 7.98959 15.3033 7.6967C15.0104 7.40381 14.5355 7.40381 14.2426 7.6967L9.46967 12.4697ZM11 12.25L10 12.25L10 13.75L11 13.75L11 12.25Z"
+                                fill="white" />
+                            <defs>
+                                <linearGradient id="paint0_linear_8362_1137" x1="1.25806" y1="1.47727" x2="29.0993"
+                                    y2="14.4163" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#618967" />
+                                    <stop offset="1" stop-color="#72A479" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="back-button">Вернуться назад</span>
+                    </div>
                 </a>
-                <h1 class="conditions__title">Условия доставки</h1>
-                <div class="conditions__map">
+                <div class="inner-wrapper">
+                    <h1 class="conditions__title">Условия доставки</h1>
+                </div>
+                <div class="conditions__inner">
+                    <div class="conditions__map">
+                        <div class="conditions__accordion">
+                            <button class="accordion__title">У наших курьеров всегда должна быть сдача!</button>
+                            <div class="accordion__description">
+                                <p class="accordion__sub-text">Мы очень внимательно следим за качеством нашей работы,
+                                    поэтому, <br> если у вас будут
+                                    какие-либо
+                                    замечания или предложения, то <br> обязательно сообщайте их нам
+                                </p>
+                            </div>
+                            <button class="accordion__title">Вам что-то не довезли?</button>
+                            <div class="accordion__description">
+                                <p class="accordion__sub-text">Мы очень внимательно следим за качеством нашей работы,
+                                    поэтому, <br> если у вас будут
+                                    какие-либо
+                                    замечания или предложения, то <br> обязательно сообщайте их нам
+                                </p>
+                            </div>
+
+                            <button class="accordion__title">Не понравился продукт?</button>
+                            <div class="accordion__description">
+                                <p class="accordion__sub-text">Мы очень внимательно следим за качеством нашей работы,
+                                    поэтому, <br> если у вас будут
+                                    какие-либо
+                                    замечания или предложения, то <br> обязательно сообщайте их нам
+                                </p>
+                            </div>
+                            <button class="accordion__title">Если появились замечания</button>
+                            <div class="accordion__description">
+                                <p class="accordion__sub-text">Мы очень внимательно следим за качеством нашей работы,
+                                    поэтому, <br> если у вас будут
+                                    какие-либо
+                                    замечания или предложения, то <br> обязательно сообщайте их нам
+                                </p>
+                            </div>
+
+                            <button class="accordion__title">Оплата Visa, MasterCard и МИР</button>
+                            <div class="accordion__description">
+                                <p class="accordion__sub-text">Мы очень внимательно следим за качеством нашей работы,
+                                    поэтому, <br> если у вас будут
+                                    какие-либо
+                                    замечания или предложения, то <br> обязательно сообщайте их нам
+                                </p>
+                            </div>
+
+                            <button class="accordion__title">Реквизиты</button>
+                            <div class="accordion__description">
+                                <p class="accordion__sub-text">Мы очень внимательно следим за качеством нашей работы,
+                                    поэтому, <br> если у вас будут
+                                    какие-либо
+                                    замечания или предложения, то <br> обязательно сообщайте их нам
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                     <img src="images/map-two.jpg" class="conditions__image" alt="conditions-image">
                 </div>
-                <div class="conditions__accordion">
-                    <button class="accordion__title">У наших курьеров всегда должна быть сдача!</button>
-                    <div class="accordion__description">
-                        <p>Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо
-                            замечания или предложения, то обязательно сообщайте их нам</p>
-                    </div>
-
-                    <button class="accordion__title">Вам что-то не довезли?</button>
-                    <div class="accordion__description">
-                        <p>Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо
-                            замечания или предложения, то обязательно сообщайте их нам</p>
-                    </div>
-
-                    <button class="accordion__title">Не понравился продукт?</button>
-                    <div class="accordion__description">
-                        <p>Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо
-                            замечания или предложения, то обязательно сообщайте их нам</p>
-                    </div>
-                    <button class="accordion__title">Если появились замечания</button>
-                    <div class="accordion__description">
-                        <p>Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо
-                            замечания или предложения, то обязательно сообщайте их нам</p>
-                    </div>
-
-                    <button class="accordion__title">Оплата Visa, MasterCard и МИР</button>
-                    <div class="accordion__description">
-                        <p>Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо
-                            замечания или предложения, то обязательно сообщайте их нам</p>
-                    </div>
-
-                    <button class="accordion__title">Реквизиты</button>
-                    <div class="accordion__description">
-                        <p>Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо
-                            замечания или предложения, то обязательно сообщайте их нам</p>
-                    </div>
-                </div>
                 <div class="conditions__column">
-                    <div class="conditions__inner">
-                        <span class="conditions__time__delivery">График работы
-                            доставки:</span>
-                        <span class="conditions__time__work">с 10:00-21:00</span>
-                    </div>
-                    <div class="conditions__inner">
-                        <span class="conditions__time__delivery">График работы
-                            доставки:</span>
-                        <span class="conditions__time__work">с 10:00-21:00</span>
+                    <div class="conditions_inner">
+                        <span class="conditions__time__delivery">График работы доставки: <br> <span
+                                class="conditions__time">с 10:00-21:00</span>
+                        </span>
+                        <span class="conditions__time__delivery">График работы кафе: <br> <span
+                                class="conditions__time">
+                                с 08:00-21:00</span>
+                        </span>
                     </div>
                 </div>
                 <div class="conditions__order">
                     <h3 class="conditions__order__title">Минимальный заказ:</h3>
                     <p class="conditions__desc">
-                        Бесплатная доставка пешим курьером при сумме заказа от 400 ₽
-                        Доставка оператором такси от любой суммы заказа - по тарифам
+                        Бесплатная доставка пешим курьером при сумме заказа от 400 ₽ <br>
+                        Доставка оператором такси от любой суммы заказа - по тарифам <br>
                         перевозчика.
                     </p>
                 </div>
             </div>
+
         </section>
     </main>
 
     <footer class="footer">
         <div class="container">
-            <div class="footer--right">
+            <div class="footer__inner">
                 <div class="footer__box">
                     <h1 class="footer__title">Logos</h1>
                     <nav class="footer__nav">
                         <ul class="footer__list">
                             <li class="footer__item">
-                                <a href="#" class="footer__link">© ООО СК «АПШЕРОН» <br> Все права защищены.
+                                <a href="#" class="footer__link">© ООО СК «АПШЕРОН» <br> Все права
+                                    защищены.
                                     2010-2020</a>
                             </li>
                             <li class="footer__item">
-                                <a href="#" class="footer__link footer--link">Пользовательское соглашение</a>
+                                <a href="#" class="footer__link footer--link">Пользовательское
+                                    соглашение</a>
                             </li>
                             <li class="footer__item">
                                 <a href="#" class="footer__link footer--link">Карта сайта</a>
                             </li>
                             <li class="footer__item">
-                                <a href="#" class="footer__link footer--link">Политика конфиденциальности</a>
+                                <a href="#" class="footer__link footer--link">Политика
+                                    конфиденциальности</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
-                <nav class="footer__center--two">
+                <nav class="footer__wrap">
                     <ul class="footer__center">
                         <li class="footer--items">
                             <a href="#" class="footer__links footer--modificatorr">О ресторане</a>
@@ -195,7 +221,7 @@
                                 доставки</a>
                         </li>
                         <li class="footer--items">
-                            <a href="order.html" class="footer__links footer--modificatorr">Возврат
+                            <a href="#" class="footer__links footer--modificatorr">Возврат
                                 товара</a>
                         </li>
                         <li class="footer--items">
