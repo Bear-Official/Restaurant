@@ -2,7 +2,6 @@ let d = document,
     container = document.querySelector(".cart-wrapper"),
     itemBox = d.querySelectorAll(".item__buy"),
     cart = d.querySelectorAll(".header__cart");
-console.log(itemBox);
 
 function getCartData() {
     return JSON.parse(localStorage.getItem("cart"));
@@ -17,14 +16,16 @@ function productsQuantity() {
     cartData = getCartData();
     let basketCount = d.querySelectorAll(".cart__count");
     try {
-        for (let i = 0; i < basketCount.length; i++) {
-            basketCount[i].innerHTML = cartData.length;
+        for (let i = 0; i < cartData.length; i++) {
+
+            for (let i = 0; i < basketCount.length; i++) {
+                basketCount[i].innerHTML = cartData[i][5] + cartData[i][5];
+            }
         }
-    } catch (error) {}
+    } catch (error) { }
 }
 
 function addToCart() {
-    console.log("1");
     (cartData = getCartData() || []),
         (parentBox = this.parentNode.parentNode.parentNode.parentNode),
         (itemId = parentBox.getAttribute("data-id")),
@@ -42,6 +43,7 @@ function addToCart() {
         itemImageUrl,
         1,
     ]);
+
     setCartData(cartData);
     productsQuantity();
 }
@@ -75,7 +77,7 @@ function generateCartProduct() {
             </div>
                 `
             );
-        } catch (error) {}
+        } catch (error) { }
     }
 }
 
@@ -129,7 +131,7 @@ try {
         }
     });
     productsQuantity(localStorage.getItem("cart").length);
-} catch (error) {}
+} catch (error) { }
 
 for (var i = 0; i < itemBox.length; i++) {
     itemBox[i].addEventListener("click", addToCart);
