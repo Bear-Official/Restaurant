@@ -1992,7 +1992,55 @@
             color: #ffffff;
             margin-bottom: 5px;
         }
+
+        &__button--minus {
+            cursor: pointer;
+            position: relative;
+            width: 29px;
+            height: 26.97px;
+            border-radius: 20px;
+            margin-top: 20px;
+            background: #72a479;
+            border: none;
+        }
+
+        &__button--plus {
+            cursor: pointer;
+            position: relative;
+            width: 29px;
+            height: 26.97px;
+            border-radius: 20px;
+            margin-top: 20px;
+            background: #72a479;
+            border: none;
+        }
     }
+}
+
+.product__button--minus::after {
+    cursor: pointer;
+    width: 17px;
+    height: 19px;
+    margin-top: -2px;
+    color: white;
+    position: absolute;
+    content: "";
+    display: block;
+    background-image: url(../images/plus.png);
+    background-repeat: no-repeat;
+}
+
+.product__button--plus::before {
+    cursor: pointer;
+    width: 17px;
+    height: 19px;
+    margin-top: -10px;
+    color: white;
+    position: absolute;
+    content: "";
+    display: block;
+    background-image: url(../images/minus.png);
+    background-repeat: no-repeat;
 }
 
 .inactive {
