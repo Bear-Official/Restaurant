@@ -993,13 +993,13 @@
 
     &__inner {
         display: flex;
+        margin-bottom: 50px;
     }
 
     &__block {
         width: 608px;
         height: 400px;
         background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
-        border-radius: 10px;
         padding-left: 50px;
         padding-top: 38px;
         padding-bottom: 25px;
@@ -1007,7 +1007,7 @@
     }
 
     &__title {
-        font-family: "Gilroy";
+        font-family: "Gilroy-Medium";
         font-style: normal;
         font-weight: 700;
         font-size: 25px;
@@ -1027,7 +1027,7 @@
     }
 
     &__weight {
-        font-family: "Gilroy";
+        font-family: "Gilroy-Regular";
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -1045,7 +1045,7 @@
         background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
         border-radius: 10px;
         border: none;
-        font-family: "Gilroy";
+        font-family: "Gilroy-Regular";
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
@@ -1084,7 +1084,7 @@
     }
 
     &__price {
-        font-family: "Gilroy";
+        font-family: "Gilroy-Medium";
         font-style: normal;
         font-weight: 700;
         font-size: 25px;
@@ -1101,7 +1101,7 @@
     }
 
     &__link {
-        font-family: "Gilroy";
+        font-family: "Gilroy-Regular";
         font-style: normal;
         font-weight: 300;
         font-size: 12px;
