@@ -1,6 +1,7 @@
 let d = document,
     container = document.querySelector('.cart-wrapper'),
-    itemBox = d.querySelectorAll('.item__buy')
+    itemBox = d.querySelectorAll('.item__buy'),
+    cart = d.querySelectorAll('.header__cart')
 
 
 function getCartData() {
@@ -14,9 +15,13 @@ function setCartData(o) {
 
 function productsQuantity() {
     cartData = getCartData()
-    let basketCount = d.querySelectorAll('.header__cart--count')
-    for (let i = 0; i < basketCount.length; i++) {
-        basketCount[i].innerHTML = cartData.length
+    let basketCount = d.querySelectorAll('.cart__count')
+    try {
+        for (let i = 0; i < basketCount.length; i++) {
+            basketCount[i].innerHTML = cartData.length
+        }
+
+    } catch (error) {
     }
 }
 
@@ -37,57 +42,33 @@ function addToCart() {
 
 function generateCartProduct() {
     cartData = getCartData()
-    if (cartData !== null) {
-        for (let i = 0; i < cartData.length; i++) {
-            try {
-                container.insertAdjacentHTML("afterbegin", `<div class="checkout__product" data-id="${cartData[i][0]}">
-                <div class="checkout__inner">
-                    <img src="${cartData[i][4]}" class="checkout__meat" alt="chechout-meat">
-                    <div class="checkout__blocker">
-                        <h2 class="checkout__sup__title">${cartData[i][1]}</h2>
-                        <p class="checkout__description">${cartData[i][3]}</p>
+    for (let i = 0; i < cartData.length; i++) {
+        try {
+            container.insertAdjacentHTML("afterbegin", `<div class="checkout__product" data-id="${cartData[i][0]}">
+                <div class="product__inner">
+                    <div class="product__info">
+                        <img class="product__img" src="${cartData[i][4]}" alt="chechout-meat">
+                        <div class="product__info-block">
+                            <h2 class="product__title">${cartData[i][1]}</h2>
+                            <p class="product__description">${cartData[i][3]}</p>
+                        </div>
                     </div>
-                    <div class="checkout__centerr checkout--count" data-counter="">
-                        <button type="submit" class="carousel--btn checkout--btn" data-action="minus"></button>
-                        <div class="carousel__count checkout__count" data-counter="value=&quot;1&quot;">1</div>
-                        <button type="submit" class="carousel--button checkout--button" data-action="plus"></button>
+                    <div class="product__block" data-counter="">
+                        <button class="product__button--minus" type="submit" data-action="minus"></button>
+                        <div class="product__count" data-counter="value=&quot;1&quot;">1</div>
+                        <button class="product__button--plus" type="submit" data-action="plus"></button>
                     </div>
-                    <div class="checkout-inner">
-                        <div class="checkout__price">${cartData[i][2]}</div>
-                        <button type="submit" class="carousel--button checkout--button checkout__button remove-item"></button>
+            
+                    <div class="product__block">
+                        <div class="product__price">${cartData[i][2]}</div>
+                        <button class="product__button--remove" type="submit"></button>
                     </div>
                 </div>
+            </div>
                 `)
-            } catch (error) {
+        } catch (error) {
 
-            }
         }
-    } else {
-        $(document).ready(function () {
-            var modalButton = $("[data-toggle=modal]");
-            var closeModalButton = $(".modal__close");
-            for (let i = 0; i < modalButton.length; i++) {
-                modalButton[i].href = "#"
-
-            }
-            modalButton.on("click", openModal);
-            closeModalButton.on("click", closeModal);
-
-            function openModal() {
-                var modalOverlay = $(".modal__overlay");
-                var modalContent = $(".modal__content");
-                modalOverlay.addClass("modal__overlay--visible");
-                modalContent.addClass("modal__content--visible");
-            }
-
-            function closeModal(event) {
-                event.preventDefault();
-                var modalOverlay = $(".modal__overlay");
-                var modalContent = $(".modal__content");
-                modalOverlay.removeClass("modal__overlay--visible");
-                modalContent.removeClass("modal__content--visible");
-            }
-        });
     }
 }
 
@@ -103,11 +84,41 @@ function removeProducts(productParent) {
     productsQuantity(localStorage.getItem("cart").length)
 }
 
-window.onload = () => { generateCartProduct(), productsQuantity() }
+function cartModal() {
+    cartData = getCartData(),
+        modalButton = $("[data-toggle=modal]"),
+        closeModalButton = $(".modal__close"),
+        modalOverlay = $(".modal__overlay"),
+        modalContent = $(".modal__content");
+
+    if (cartData.length !== 0) {
+
+        for (let i = 0; i < modalButton.length; i++) {
+            modalButton.off('click', openModal);
+            modalButton[i].href = "checkout.html"
+        }
+    } else {
+        for (let i = 0; i < modalButton.length; i++) {
+            modalButton[i].href = "#"
+        }
+        modalButton.on("click", openModal);
+        closeModalButton.on("click", closeModal);
+
+        function openModal() {
+            modalOverlay.addClass("modal__overlay--visible");
+            modalContent.addClass("modal__content--visible");
+        }
+
+        function closeModal() {
+            modalOverlay.removeClass("modal__overlay--visible");
+            modalContent.removeClass("modal__content--visible");
+        }
+    }
+}
 
 try {
     container.addEventListener('click', (e) => {
-        if (e.target.classList.contains('remove-item')) {
+        if (e.target.classList.contains('product__button--remove')) {
             removeProducts(e.target.closest('.checkout__product'))
         }
     })
@@ -116,9 +127,12 @@ try {
 
 }
 
-
-// Add Click Event on Every Basket button
 for (var i = 0; i < itemBox.length; i++) {
     itemBox[i].addEventListener("click", addToCart)
 }
 
+for (var i = 0; i < cart.length; i++) {
+    cart[i].addEventListener("click", cartModal)
+}
+
+window.onload = () => { generateCartProduct(), productsQuantity(), cartModal() }

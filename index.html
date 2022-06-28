@@ -21,7 +21,6 @@
 </head>
 
 <body>
-    <!-- Start Header -->
     <header class="header">
         <div class="container">
             <div class="header__center">
@@ -67,84 +66,66 @@
                         <a href="tel:+7(917) 510-57-59" class="header__tel--link">+7 (917) 510-57-59</a>
                     </div>
                 </div>
-                <a href="checkout.html" class="header__cart">
-                    <span class="header__cart--title">Корзина</span>
-                    <div class="header__border"></div>
-                    <div class="header__block">
-                        <span class="header__cart--count">0</span>
+                <a href="checkout.html" data-toggle="modal" class="header__cart">
+                    <span class="cart__title">Корзина</span>
+                    <div class="cart__border"></div>
+                    <div class="cart__block">
+                        <span class="cart__count">0</span>
                     </div>
                 </a>
             </div>
         </div>
-        <!-- End header -->
     </header>
 
     <main class="page">
         <div class="slider">
-            <div class="slider--container">
-                <div class="container">
-                    <!-- Slider main container -->
-                    <div class="swiper first-slider">
-                        <!-- Additional required wrapper -->
-                        <div class="slider-wrapper">
-                            <!-- Slides -->
-                            <div class="slide">
-                                <img src="images/banner.jpg" class="slider__img" alt="slider">
-                            </div>
-                            <!-- <div class="slide">
-                                <img src="images/banner.jpg" class="slider__img" alt="slider">
-                            </div>
-                            <div class="slide">
-                                <img src="images/banner.jpg" class="slider__img" alt="slider">
-                            </div> -->
+            <div class="container">
+                <div class="swiper first-slider">
+                    <div class="slider-wrapper">
+                        <div class="slide">
+                            <img src="images/banner.jpg" class="slider__img" alt="slider">
                         </div>
                     </div>
                 </div>
-                <!-- End Slider -->
             </div>
         </div>
         <div class="navigation">
             <div class="container">
                 <div class="navigation__box">
-                    <div class="navigation__inner">
-                        <nav class="navigation__nav">
-                            <ul class="navigation__list">
-                                <li class="navigation__item">
-                                    <a href="#colds__snacks" class="navigation__links">Холодные закуски</a>
-                                </li>
-                                <li class="navigation__item">
-                                    <a href="#hot__snacks" class="navigation__links">Горячие закуски</a>
-                                </li>
-                                <li class="navigation__item">
-                                    <a href="#meat" class="navigation__links">Мясные блюда</a>
-                                </li>
-                                <li class="navigation__item">
-                                    <a href="#soup" class="navigation__links">Супы</a>
-                                </li>
-                                <li class="navigation__item">
-                                    <a href="#fish" class="navigation__links">Рыбные блюда</a>
-                                </li>
-                                <li class="navigation__item">
-                                    <a href="#grill" class="navigation__links">Гриль меню</a>
-                                </li>
-                                <li class="navigation__item">
-                                    <a href="#dish" class="navigation__links">Фирменные блюда</a>
-                                </li>
-                                <li class="navigation__item">
-                                    <a href="#drinks" class="navigation__links">Напитки</a>
-                                </li>
-                            </ul>
-                            <div class="navigation__cart">
-                                <a href="checkout.html" data-toggle="modal" class="header__cart header--cart">
-                                    <span class="header__cart--title">Корзина</span>
-                                    <div class="header__border"></div>
-                                    <div class="header__block">
-                                        <span class="header__cart--count">0</span>
-                                    </div>
-                                </a>
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a href="#colds__snacks" class="navigation__links">Холодные закуски</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#hot__snacks" class="navigation__links">Горячие закуски</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#meat" class="navigation__links">Мясные блюда</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#soup" class="navigation__links">Супы</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#fish" class="navigation__links">Рыбные блюда</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#grill" class="navigation__links">Гриль меню</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#dish" class="navigation__links">Фирменные блюда</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#drinks" class="navigation__links">Напитки</a>
+                        </li>
+                    </ul>
+                    <div class="navigation__cart">
+                        <a href="checkout.html" data-toggle="modal" class="header__cart header__cart--bottom inactive">
+                            <span class="cart__title">Корзина</span>
+                            <div class="cart__border"></div>
+                            <div class="cart__block">
+                                <span class="cart__count">0</span>
                             </div>
-
-                        </nav>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -208,11 +189,9 @@
                                                         <div>
                                                         </div>
                                                         <div class="item__info">
-                                                            <button type="submit" class="carousel--btn"
-                                                                data-action="minus"></button>
                                                             <span class="item__price" data-counter>450 ₽</span>
-                                                            <button type="submit" class="carousel--btnn"
-                                                                data-action="plus"></button>
+                                                            <button type="submit" class="item__buy" data-cart>В
+                                                                корзину</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -355,11 +334,9 @@
                                                         <div>
                                                         </div>
                                                         <div class="item__info">
-                                                            <button type="submit" class="carousel--btn"
-                                                                data-action="minus"></button>
                                                             <span class="item__price" data-counter>450 ₽</span>
-                                                            <button type="submit" class="carousel--btnn"
-                                                                data-action="plus"></button>
+                                                            <button type="submit" class="item__buy" data-cart>В
+                                                                корзину</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -502,11 +479,9 @@
                                                         <div>
                                                         </div>
                                                         <div class="item__info">
-                                                            <button type="submit" class="carousel--btn"
-                                                                data-action="minus"></button>
                                                             <span class="item__price" data-counter>450 ₽</span>
-                                                            <button type="submit" class="carousel--btnn"
-                                                                data-action="plus"></button>
+                                                            <button type="submit" class="item__buy" data-cart>В
+                                                                корзину</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -649,11 +624,9 @@
                                                         <div>
                                                         </div>
                                                         <div class="item__info">
-                                                            <button type="submit" class="carousel--btn"
-                                                                data-action="minus"></button>
                                                             <span class="item__price" data-counter>450 ₽</span>
-                                                            <button type="submit" class="carousel--btnn"
-                                                                data-action="plus"></button>
+                                                            <button type="submit" class="item__buy" data-cart>В
+                                                                корзину</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -796,11 +769,9 @@
                                                         <div>
                                                         </div>
                                                         <div class="item__info">
-                                                            <button type="submit" class="carousel--btn"
-                                                                data-action="minus"></button>
                                                             <span class="item__price" data-counter>450 ₽</span>
-                                                            <button type="submit" class="carousel--btnn"
-                                                                data-action="plus"></button>
+                                                            <button type="submit" class="item__buy" data-cart>В
+                                                                корзину</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -943,11 +914,9 @@
                                                         <div>
                                                         </div>
                                                         <div class="item__info">
-                                                            <button type="submit" class="carousel--btn"
-                                                                data-action="minus"></button>
                                                             <span class="item__price" data-counter>450 ₽</span>
-                                                            <button type="submit" class="carousel--btnn"
-                                                                data-action="plus"></button>
+                                                            <button type="submit" class="item__buy" data-cart>В
+                                                                корзину</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1090,11 +1059,9 @@
                                                         <div>
                                                         </div>
                                                         <div class="item__info">
-                                                            <button type="submit" class="carousel--btn"
-                                                                data-action="minus"></button>
                                                             <span class="item__price" data-counter>450 ₽</span>
-                                                            <button type="submit" class="carousel--btnn"
-                                                                data-action="plus"></button>
+                                                            <button type="submit" class="item__buy" data-cart>В
+                                                                корзину</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1237,11 +1204,9 @@
                                                         <div>
                                                         </div>
                                                         <div class="item__info">
-                                                            <button type="submit" class="carousel--btn"
-                                                                data-action="minus"></button>
                                                             <span class="item__price" data-counter>450 ₽</span>
-                                                            <button type="submit" class="carousel--btnn"
-                                                                data-action="plus"></button>
+                                                            <button type="submit" class="item__buy" data-cart>В
+                                                                корзину</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1384,11 +1349,9 @@
                                                         <div>
                                                         </div>
                                                         <div class="item__info">
-                                                            <button type="submit" class="carousel--btn"
-                                                                data-action="minus"></button>
                                                             <span class="item__price" data-counter>450 ₽</span>
-                                                            <button type="submit" class="carousel--btnn"
-                                                                data-action="plus"></button>
+                                                            <button type="submit" class="item__buy" data-cart>В
+                                                                корзину</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1615,14 +1578,14 @@
                         <div class="map__wrap">
                             <h1 class="map__title">КОНТАКТЫ</h1>
                             <p class="map__description">
-                            <div class="map--flex map__flex--two">
-                                <img src="images/location-two.svg" alt="location-two" class="map__img">
-                                <span class="map__adress">Наш адрес:</span>
-                            </div>
-                            <p class="map__sub__description">
-                                МО, городской округ Красногорск, село Ильинкое,
-                                Экспериментальная улица, 10
-                            </p>
+                                <div class="map--flex map__flex--two">
+                                    <img src="images/location-two.svg" alt="location-two" class="map__img">
+                                    <span class="map__adress">Наш адрес:</span>
+                                </div>
+                                <p class="map__sub__description">
+                                    МО, городской округ Красногорск, село Ильинкое,
+                                    Экспериментальная улица, 10
+                                </p>
                         </div>
                         <div class="map__wrap">
                             <div class="map--flex map__flex--two">
@@ -1731,28 +1694,34 @@
     </div>
     </div>
 
+    <script>
+        const
+            navigation = document.getElementsByClassName("navigation")[0],
+            navigationList = document.getElementsByClassName("navigation__list")[0],
+            topCart = document.getElementsByClassName("header__cart")[0],
+            bottomCart = document.getElementsByClassName("header__cart--bottom")[0];
+
+        window.onscroll = function () {
+            if (
+                document.body.scrollTop > 100 ||
+                document.documentElement.scrollTop > 100
+            ) {
+                navigation.style = "position: sticky;";
+                topCart.className = "header__cart inactive";
+                bottomCart.className = "header__cart header__cart--bottom";
+            } else {
+                navigation.style = "";
+                topCart.className = "header__cart";
+                bottomCart.className = "header__cart header__cart--bottom inactive";
+            }
+        };
+    </script>
+
     <script src="javascript/main.min.js"></script>
     <script src="javascript/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script>
-        let navigation = document.getElementsByClassName("navigation")[0];
-        let cart = document.getElementsByClassName("header--cart")[0];
-
-        window.onscroll = function () {
-            if (
-                document.body.scrollTop > 550 ||
-                document.documentElement.scrollTop > 550
-            ) {
-                navigation.style = "position: sticky;";
-                cart.className = "header__cart header--cart activ";
-            } else {
-                navigation.style = "";
-                cart.className = " header__cart header--cart";
-            }
-        };
-    </script>
 </body>
 
 </html>
