@@ -136,7 +136,6 @@
         display: flex;
         align-self: center;
         align-items: center;
-        // margin-left: 265px;
     }
 }
 
@@ -318,9 +317,6 @@
         display: flex !important;
         flex-direction: column !important;
     }
-    // .footer__links {
-    //     display: none;
-    // }
 
     .btn {
         width: 152px !important;
@@ -813,6 +809,10 @@
 
     .conditions .conditions__image {
         height: 290px;
+    }
+
+    .product__img {
+        margin-right: 33px !important;
     }
 }
 
