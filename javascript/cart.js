@@ -1,7 +1,8 @@
 let d = document,
     container = document.querySelector(".cart-wrapper"),
     itemBox = d.querySelectorAll(".item__buy"),
-    cart = d.querySelectorAll(".header__cart");
+    cart = d.querySelectorAll(".header__cart"),
+    sum = 0
 
 function getCartData() {
     return JSON.parse(localStorage.getItem("cart"));
@@ -9,40 +10,22 @@ function getCartData() {
 
 function setCartData(o) {
     localStorage.setItem("cart", JSON.stringify(o));
-    return false;
-}
-
-function productsQuantity() {
-    cartData = getCartData();
-    let basketCount = d.querySelectorAll(".cart__count");
-    try {
-        for (let i = 0; i < cartData.length; i++) {
-
-            for (let i = 0; i < basketCount.length; i++) {
-                basketCount[i].innerHTML = cartData[i][5] + cartData[i][5];
-            }
-        }
-    } catch (error) { }
 }
 
 function addToCart() {
-    (cartData = getCartData() || []),
-        (parentBox = this.parentNode.parentNode.parentNode.parentNode),
-        (itemId = parentBox.getAttribute("data-id")),
-        (itemTitle = parentBox.querySelector(".item__title").innerHTML),
-        (itemPrice = parentBox.querySelector(".item__price").innerHTML),
-        (itemDescription =
-            parentBox.querySelector(".item__description").innerHTML),
-        (itemImageUrl = parentBox.querySelector(".kitchen").src);
+    cartData = getCartData() || {},
+        parentBox = this.parentNode.parentNode.parentNode.parentNode,
+        itemId = parentBox.getAttribute("data-id"),
+        itemTitle = parentBox.querySelector(".item__title").innerHTML,
+        itemPrice = parentBox.querySelector(".item__price").innerHTML,
+        itemDescription = parentBox.querySelector(".item__description").innerHTML,
+        itemImageUrl = parentBox.querySelector(".kitchen").src;
 
-    cartData.push([
-        itemId,
-        itemTitle,
-        itemPrice,
-        itemDescription,
-        itemImageUrl,
-        1,
-    ]);
+    if (cartData.hasOwnProperty(itemId)) {
+        cartData[itemId][0] += 1;
+    } else {
+        cartData[itemId] = [1, itemTitle, itemPrice, itemDescription, itemImageUrl];
+    }
 
     setCartData(cartData);
     productsQuantity();
@@ -50,42 +33,61 @@ function addToCart() {
 
 function generateCartProduct() {
     cartData = getCartData();
-    for (let i = 0; i < cartData.length; i++) {
-        try {
+    try {
+        for (var items in cartData) {
             container.insertAdjacentHTML(
                 "afterbegin",
-                `<div class="checkout__product" data-id="${cartData[i][0]}">
-                <div class="product__inner">
-                    <div class="product__info">
-                        <img class="product__img" src="${cartData[i][4]}" alt="chechout-meat">
-                        <div class="product__info-block">
-                            <h2 class="product__title">${cartData[i][1]}</h2>
-                            <p class="product__description">${cartData[i][3]}</p>
+                `<div class="checkout__product" data-id="${cartData[items]}">
+                    <div class="product__inner">
+                        <div class="product__info">
+                            <img class="product__img" src="${cartData[items][4]}" alt="chechout-meat">
+                            <div class="product__info-block">
+                                <h2 class="product__title">${cartData[items][1]}</h2>
+                                <p class="product__description">${cartData[items][3]}</p>
+                            </div>
+                        </div>
+                        <div class="product__block" data-counter="">
+                            <button class="product__button--minus" type="submit" data-action="minus"></button>
+                            <div class="product__count" data-counter="value=&quot;1&quot;">${cartData[items][0]}</div>
+                            <button class="product__button--plus" type="submit" data-action="plus"></button>
+                        </div>
+                
+                        <div class="product__block">
+                            <div class="product__price">${cartData[items][2]}</div>
+                            <button class="product__button--remove" type="submit"></button>
                         </div>
                     </div>
-                    <div class="product__block" data-counter="">
-                        <button class="product__button--minus" type="submit" data-action="minus"></button>
-                        <div class="product__count" data-counter="value=&quot;1&quot;">1</div>
-                        <button class="product__button--plus" type="submit" data-action="plus"></button>
-                    </div>
-            
-                    <div class="product__block">
-                        <div class="product__price">${cartData[i][2]}</div>
-                        <button class="product__button--remove" type="submit"></button>
-                    </div>
                 </div>
-            </div>
-                `
+                    `
             );
-        } catch (error) { }
+        }
+    } catch (error) {
+
     }
+
 }
+
+
+function productsQuantity() {
+    sum = 0
+    cartData = getCartData();
+    for (var items in cartData) {
+        sum += cartData[items][0];
+    }
+    let basketCount = d.querySelectorAll(".cart__count");
+    try {
+        for (let i = 0; i < basketCount.length; i++) {
+            basketCount[i].innerHTML = sum
+        }
+    } catch (error) { }
+}
+
 
 function removeProducts(productParent) {
     cartData = getCartData();
-    for (let i = 0; i < cartData.length; i++) {
-        if (productParent.dataset.id == cartData[i][0]) {
-            cartData.pop();
+    for (var items in cartData) {
+        if (productParent.dataset.id == cartData[items]) {
+            delete cartData[items];
         }
     }
     productParent.remove();
@@ -94,20 +96,20 @@ function removeProducts(productParent) {
 }
 
 function cartModal() {
-    (cartData = getCartData()),
-        (modalButton = $("[data-toggle=modal]")),
-        (closeModalButton = $(".modal__close")),
-        (modalOverlay = $(".modal__overlay")),
-        (modalContent = $(".modal__content"));
+    cartData = getCartData(),
+        modalButton = $("[data-toggle=modal]"),
+        closeModalButton = $(".modal__close"),
+        modalOverlay = $(".modal__overlay"),
+        modalContent = $(".modal__content");
 
-    if (cartData.length !== 0) {
+    if (Object.keys(cartData).length !== 0) {
         for (let i = 0; i < modalButton.length; i++) {
             modalButton.off("click", openModal);
             modalButton[i].href = "checkout.html";
         }
     } else {
         for (let i = 0; i < modalButton.length; i++) {
-            modalButton[i].href = "#";
+            modalButton[i].href = "javascript: void(0)";
         }
         modalButton.on("click", openModal);
         closeModalButton.on("click", closeModal);

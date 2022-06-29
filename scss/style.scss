@@ -173,11 +173,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-left: 12px;
         margin-top: 4px;
+        margin-left: 12px;
 
         &--checkout {
-            margin: 0;
+            margin-left: 0;
             padding: 0 5px;
         }
     }
@@ -2490,6 +2490,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 25px;
+        padding: 50px 0;
         color: #ffffff;
     }
 }
@@ -2587,13 +2588,18 @@
         content: "";
         display: block;
         width: 24px;
-        height: 24px;
+        height: 14px;
         background-image: url(../images/Arrow-down.png);
         background-repeat: no-repeat;
         background-size: 20px;
         right: 22px;
-        top: 27px;
-        bottom: 27px;
+        bottom: 30px;
+        transition: all 0.3s ease-in-out;
+        transform: rotate(270deg);
+    }
+    .open::after {
+        content: "";
+        transition: all 0.3s ease-in-out;
         transform: rotate(177deg);
     }
 }
