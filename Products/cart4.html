@@ -3,7 +3,7 @@
 
 <head>
     <title>Restaurant</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <meta charset="UTF-8">
     <meta name="description" content="Web Development">
     <meta name="keywords" content="HTML, CSS, JS">
@@ -24,25 +24,25 @@
     <!-- Start Header -->
     <header class="header">
         <div class="container">
-            <div class="header__center">
+            <div class="header__inner">
                 <button class="menu__button">
                     <nav class="footer__nav">
                         <input type="checkbox" id="active">
                         <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
                         <div class="wrapper menu--wrapper">
                             <ul class="footer__center">
-                                <li class="footer--items">
+                                <li class="footer_items">
                                     <a href="#" class="footer__links footer--modificatorr">О ресторане</a>
                                 </li>
-                                <li class="footer--items">
+                                <li class="footer_items">
                                     <a href="conditions.html" class="footer__links footer--modificatorr">Условия
                                         доставки</a>
                                 </li>
-                                <li class="footer--items">
+                                <li class="footer_items">
                                     <a href="order.html" class="footer__links footer--modificatorr">Возврат
                                         товара</a>
                                 </li>
-                                <li class="footer--items ">
+                                <li class="footer_items ">
                                     <a href="promo.html" class="footer__links footer--modificatorr">Акции</a>
                                 </li>
                             </ul>
@@ -67,17 +67,15 @@
                         <a href="tel:+7(917) 510-57-59" class="header__tel--link">+7 (917) 510-57-59</a>
                     </div>
                 </div>
-                <a href="#" class="header__cart">
+                <a href="#" data-toggle="modal" class="header__cart">
                     <span class="header__cart--title">Корзина</span>
                     <div class="header__border"></div>
                     <div class="header__block">
-                        <span class="header__cart--count">4</span>
+                        <span class="cart__count">0</span>
                     </div>
                 </a>
             </div>
         </div>
-        </div>
-        <!-- End header -->
     </header>
 
     <main class="page">
@@ -314,47 +312,47 @@
         <!-- Map -->
         <section class="map--mod">
             <div class="container">
-                <div class="map__box">
-                    <div class="map__contacts map--contacts">
-                        <div class="map__wrap">
-                            <h1 class="map__title">КОНТАКТЫ</h1>
-                            <p class="map__description">
-                            <div class="map--flex map__flex--two">
-                                <img src="../images/location-two.svg" alt="location-two" class="map__img">
-                                <span class="map__adress">Наш адрес:</span>
-                            </div>
-                            <p class="map__sub__description">
-                                МО, городской округ Красногорск, село Ильинкое,
-                                Экспериментальная улица, 10
-                            </p>
+                <div class="map__contacts">
+                    <div class="map__wrap">
+                        <h1 class="map__title">КОНТАКТЫ</h1>
+                        <p class="map__description">
+                        <div class="map__inner">
+                            <img src="../images/location-two.svg" alt="location-two" class="map__img">
+                            <span class="map__adress">Наш адрес:</span>
                         </div>
-                        <div class="map__wrap">
-                            <div class="map--flex map__flex--two">
-                                <img src="images/Message.svg" alt="Message" class="map__img">
-                                <span class="map__txt">Наша почта:</span>
-                            </div>
-                            <span class="map__mail">auto.wash@gmail.com</span>
-                            <div class="map__between">
-                                <button type="submit" class="map__button">ЗАБРОНИРОВАТЬ СТОЛ</button>
-                                <a href="tel:+7 (917) 510-57-59" class="map__tel">+7(917) 510-57-59 </a>
-                                <!-- <span class="map__text">Звоните или оставляйте заявку</span> -->
-                            </div>
-                            <div class="map__beetwen">
-                                <span class="map__social">Мы в соц сетях:</span>
-                                <div class="map__images">
-                                    <a href="#">
-                                        <img src="../images/facebook.svg" class="map__social" alt="facebook">
-                                    </a>
-                                    <a href="#">
-                                        <img src="../images/vkontakte.svg" class="map__social" alt="vkontakte">
-                                    </a>
-                                    <a href="#">
-                                        <img src="../images/youtube.svg" class="map__social" alt="youtube">
-                                    </a>
-                                    <a href="#">
-                                        <img src="../images/instagram.svg" class="map__social" alt="instagram">
-                                    </a>
-                                </div>
+                        <p class="map__sub__description">
+                            МО, городской округ Красногорск, село Ильинкое,
+                            Экспериментальная улица, 10
+                        </p>
+                    </div>
+                    <div class="map__wrap">
+                        <div class="map__inner">
+                            <img src="../images/Message.svg" alt="Message" class="map__img">
+                            <span class="map__txt">Наша почта:</span>
+                        </div>
+                        <span class="map__mail">auto.wash@gmail.com</span>
+                        <div class="map_inner">
+                            <button type="submit" class="map__button">ЗАБРОНИРОВАТЬ
+                                СТОЛ</button>
+                            <a href="tel:+7 (917) 510-57-59" class="map__tel">+7(917) 510-57-59
+                            </a>
+                            <!-- <span class="map__text">Звоните или оставляйте заявку</span> -->
+                        </div>
+                        <div class="map_inner">
+                            <span class="map__social">Мы в соц сетях:</span>
+                            <div class="map__images">
+                                <a href="#">
+                                    <img src="../images/facebook.svg" class="map__social" alt="facebook">
+                                </a>
+                                <a href="#">
+                                    <img src="../images/vkontakte.svg" class="map__social" alt="vkontakte">
+                                </a>
+                                <a href="#">
+                                    <img src="../images/youtube.svg" class="map__social" alt="youtube">
+                                </a>
+                                <a href="#">
+                                    <img src="../images/instagram.svg" class="map__social" alt="instagram">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -367,48 +365,51 @@
     <!-- Start Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer--right">
+            <div class="footer__inner">
                 <div class="footer__box">
                     <h1 class="footer__title">Logos</h1>
                     <nav class="footer__nav">
                         <ul class="footer__list">
                             <li class="footer__item">
-                                <a href="#" class="footer__link">© ООО СК «АПШЕРОН» <br> Все права защищены.
+                                <a href="#" class="footer__link">© ООО СК «АПШЕРОН» <br> Все права
+                                    защищены.
                                     2010-2020</a>
                             </li>
                             <li class="footer__item">
-                                <a href="#" class="footer__link footer--link">Пользовательское соглашение</a>
+                                <a href="#" class="footer__link footer--link">Пользовательское
+                                    соглашение</a>
                             </li>
                             <li class="footer__item">
                                 <a href="#" class="footer__link footer--link">Карта сайта</a>
                             </li>
                             <li class="footer__item">
-                                <a href="#" class="footer__link footer--link">Политика конфиденциальности</a>
+                                <a href="#" class="footer__link footer--link">Политика
+                                    конфиденциальности</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
-                <nav class="footer__center--two">
+                <nav class="footer__wrap">
                     <ul class="footer__center">
-                        <li class="footer--items">
+                        <li class="footer_items">
                             <a href="#" class="footer__links footer--modificatorr">О ресторане</a>
                         </li>
-                        <li class="footer--items">
-                            <a href="..//Other Pages/conditions.html" class="footer__links footer--modificatorr">Условия
+                        <li class="footer_items">
+                            <a href="../conditions.html" class="footer__links footer--modificatorr">Условия
                                 доставки</a>
                         </li>
-                        <li class="footer--items">
-                            <a href="..//Other Pages/order.html" class="footer__links footer--modificatorr">Возврат
+                        <li class="footer_items">
+                            <a href="#" class="footer__links footer--modificatorr">Возврат
                                 товара</a>
                         </li>
-                        <li class="footer--items">
-                            <a href="..//Other Pages/promo.html" class="footer__links footer--modificatorr">Акции</a>
+                        <li class="footer_items">
+                            <a href="../promo.html" class="footer__links footer--modificatorr">Акции</a>
                         </li>
                     </ul>
                 </nav>
             </div>
             <div class="button__left">
-                <a href="../index.html">
+                <a href="#">
                     <img src="../images/arrow-up.png" alt="arrow-up" class="arrow-up">
                 </a>
             </div>

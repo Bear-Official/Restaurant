@@ -2668,3 +2668,15 @@
     margin-left: 12px;
     margin-top: 4px;
 }
+
+.button__back {
+    display: flex;
+    align-items: center;
+}
+
+.products__txt {
+    color: white;
+    font-family: "Gilroy-Medium";
+    margin-left: 20px;
+    white-space: nowrap;
+}
