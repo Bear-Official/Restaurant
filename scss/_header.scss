@@ -1,0 +1,178 @@
+.header {
+    padding-top: 37px;
+    padding-bottom: 37px;
+    background-color: #403c3b;
+    box-shadow: 0px 30px 60px rgba(34, 31, 32, 0.2);
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    &__profile__title {
+        position: relative;
+        font-family: "Gilroy-Regular";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #ffffff;
+    }
+
+    &__profile__img {
+        margin-right: 10px;
+    }
+
+    .header--contact::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 2px;
+        height: 52px;
+        left: 156px;
+        background-color: #635c5a;
+        top: -4px;
+    }
+
+    &__title {
+        font-family: "Gilroy-Medium";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 25px;
+        letter-spacing: 0.15em;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    &__form {
+        position: relative;
+    }
+
+    &__img {
+        position: absolute;
+        padding-top: 14px;
+        padding-left: 14px;
+    }
+
+    &__input {
+        background-color: #504b4a;
+        padding-right: 40px;
+        width: 555px;
+        height: 52px;
+        border-radius: 10px;
+        padding-left: 48px;
+        font-family: "Gilroy-Regular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #cfcfcf;
+        border: none;
+    }
+
+    &__button {
+        cursor: pointer;
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        top: 14px;
+        right: 14px;
+    }
+
+    &__search {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__phone {
+        width: 32px;
+        height: 32px;
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+
+    &__contact {
+        position: relative;
+        font-family: "Gilroy-regular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        font-size: 12px;
+        color: #cfcfcf;
+    }
+
+    &__contacts {
+        display: flex;
+    }
+
+    &__tel {
+        display: block;
+        font-family: "Gilroy-ExtraBold";
+        color: white;
+    }
+
+    &__cart {
+        display: flex;
+        width: 149px;
+        height: 52px;
+        background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: all 0.5s ease-in-out;
+    }
+
+    &__cart-title {
+        font-family: "Gilroy-SemiBold";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #fff;
+        padding-left: 20px;
+    }
+
+    &__block {
+        width: 24px;
+        height: 24px;
+        border-radius: 100%;
+        background-color: #fff;
+        margin-right: 19px;
+    }
+
+    &__border {
+        width: 38px;
+        height: 0px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        transform: rotate(90deg);
+    }
+
+    &__cart-count {
+        font-family: "Gilroy-Regular";
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 17px;
+        color: #72a479;
+        padding-right: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 12px;
+        margin-top: 4px;
+    }
+
+    .header .header--contact::after {
+        display: none;
+    }
+}

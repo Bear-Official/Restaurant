@@ -44,6 +44,14 @@
         max-width: 485px;
     }
 
+    .order__block {
+        margin-left: 0 !important;
+    }
+
+    .order--modificator {
+        margin-left: -26px !important;
+    }
+
     .cart-inner {
         flex-wrap: wrap;
         gap: 15px;
@@ -52,6 +60,12 @@
     @media (max-width: 1200px) {
         .header .header__input {
             width: 500px;
+        }
+
+        .order .order {
+            &__wrap {
+                margin-left: 0;
+            }
         }
     }
 
@@ -74,7 +88,7 @@
         padding: 0 20px !important;
     }
 
-    .navigation__links {
+    .navigation__link {
         font-size: 15px !important;
     }
 
@@ -100,6 +114,12 @@
     .conditions .conditions__map {
         flex-wrap: wrap;
         max-width: 600px;
+    }
+
+    .conditions {
+        &__block {
+            margin: auto !important;
+        }
     }
 
     .conditions .conditions__image {
@@ -182,7 +202,7 @@
         display: -webkit-box !important;
     }
 
-    .navigation__links {
+    .navigation__link {
         padding-left: 10px !important;
     }
 
@@ -244,17 +264,31 @@
     }
 }
 
-@media (max-width: 844px) {
-    .footer__inner {
-        flex-wrap: wrap;
-    }
+@media (max-width: 845px) {
+    .order .order {
+        &--three {
+            margin-left: 0;
+        }
 
-    .footer--modificatorr {
-        display: block;
-        padding-top: 25px;
-        padding-left: 50px !important;
+        &--two {
+            width: 97% !important;
+        }
     }
 }
+
+@media (max-width: 844px) {
+    .footer .footer {
+        &__inner {
+            flex-wrap: wrap;
+        }
+
+        &__navigation {
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+    }
+}
+
 @media (max-width: 767px) {
     .products__inner {
         flex-wrap: wrap;
@@ -306,7 +340,7 @@
         margin-right: 15px !important;
     }
 
-    .order__out {
+    .order__wrap {
         display: none;
     }
 }
@@ -337,8 +371,10 @@
 }
 
 @media (max-width: 710px) {
-    .footer .footer--modificatorr {
-        display: none;
+    .footer .footer {
+        &__item {
+            display: none;
+        }
     }
 }
 
@@ -356,6 +392,10 @@
 
 // @Phone
 @media (max-width: 600px) {
+    .check__order-inner {
+        flex-direction: column;
+    }
+
     .coffee__inner {
         grid-template-columns: repeat(1, 1fr) !important;
         place-items: center;
@@ -401,7 +441,7 @@
         margin-left: 50px;
     }
 
-    .header .header__cart--count,
+    .header .header__cart-count,
     .header__block,
     .header .header__border {
         display: none;
@@ -438,7 +478,7 @@
         border-radius: 10px;
     }
 
-    .header .header__cart--title {
+    .header .header__cart-title {
         position: relative;
         padding-left: 0;
         padding-top: 25px;
@@ -450,7 +490,7 @@
         color: #ffffff;
         text-transform: lowercase;
     }
-    .header__cart--title::before {
+    .header__cart-title::before {
         position: absolute;
         display: block;
         content: "";
@@ -580,6 +620,15 @@
         height: 572px;
         margin-bottom: 210px;
     }
+
+    .map__sub-description {
+        width: auto !important;
+    }
+
+    .map__button {
+        margin-bottom: 20px !important;
+    }
+
     .map--contacts {
         margin-top: 0 !important;
     }
@@ -588,8 +637,10 @@
         left: -11px !important;
     }
 
-    .map_inner {
+    .map__block,
+    .map__contact {
         flex-direction: column;
+        align-items: center;
     }
 
     .map__sub__description {
@@ -621,8 +672,8 @@
         padding: 0 5px !important;
     }
 
-    .navigation__links {
-        font-size: 14px !important;
+    .navigation__link {
+        font-size: 15px !important;
     }
 
     .footer .arrow-up {
@@ -641,7 +692,7 @@
     }
 
     .order .button {
-        margin-right: -9px !important;
+        margin-right: -5px !important;
         font-size: 14px !important;
     }
 
@@ -912,13 +963,11 @@
 }
 
 @media (max-width: 598px) {
-    .footer__center {
-        display: flex;
-        align-items: center;
-        justify-self: center;
-        flex-direction: column;
+    .conditions {
+        &__block {
+            flex-direction: column !important;
+        }
     }
-
     .order .button:first-child {
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
@@ -990,6 +1039,7 @@
         position: relative;
         line-height: 50px;
         transition: all 0.3s ease;
+        white-space: nowrap;
     }
     .wrapper ul li a:after {
         position: absolute;
@@ -1101,6 +1151,15 @@
 }
 
 @media (max-width: 368px) {
+    .order .order {
+        &--two {
+            width: 95% !important;
+        }
+
+        &__header {
+            font-size: 20px;
+        }
+    }
     .checkout .checkout--button {
         margin-left: -10px;
     }

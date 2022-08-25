@@ -29,60 +29,57 @@
                         <input type="checkbox" id="active">
                         <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
                         <div class="wrapper menu--wrapper">
-                            <ul class="footer__center">
-                                <li class="footer--items">
-                                    <a href="#" class="footer__links footer--modificatorr">О ресторане</a>
+                            <ul class="footer__inner">
+                                <li class="footer__item">
+                                    <a class="footer__links" href="#">О ресторане</a>
                                 </li>
-                                <li class="footer--items">
-                                    <a href="conditions.html" class="footer__links footer--modificatorr">Условия
+                                <li class="footer__item">
+                                    <a class="footer__links" href="conditions.html">Условия
                                         доставки</a>
                                 </li>
-                                <li class="footer--items">
-                                    <a href="order.html" class="footer__links footer--modificatorr">Возврат
+                                <li class="footer__item">
+                                    <a class="footer__links" href="order.html">Возврат
                                         товара</a>
                                 </li>
-                                <li class="footer--items ">
-                                    <a href="promo.html" class="footer__links footer--modificatorr">Акции</a>
+                                <li class="footer__item">
+                                    <a class="footer__links" href="promo.html">Акции</a>
                                 </li>
                             </ul>
                         </div>
                     </nav>
                 </button>
-                <picture>
-                    <a href="index.html" class="header__link">
-                        <h1 class="header__title ">Logos</h1>
-                    </a>
-                </picture>
-                <form action="#" class="header__form">
-                    <img src="images/Location.svg" alt="Location" class="header__img">
-                    <input type="text" placeholder="Введите адрес доставки" name="search" class="header__input">
-                    <button type="submit" class="header__button"><img src="images/Search.png" alt="search"
-                            class="header__search"></button>
+                <a class="header__link" href="index.html">
+                    <h1 class="header__title">Logos</h1>
+                </a>
+                <form class="header__form" action="#">
+                    <img class="header__img" src="images/Location.svg" alt="Location">
+                    <input class="header__input" type="text" placeholder="Введите адрес доставки" name="search">
+                    <button class="header__button" type="submit"><img class="header__search" src="images/Search.png"
+                            alt="search"></button>
                 </form>
                 <div class="header__contacts">
-                    <img src="images/phone.png" alt="phone" class="header__phone">
+                    <img class="header__phone" src="images/phone.png" alt="phone">
                     <div class="header__items">
-                        <span class="header--contact">Контакты:</span>
-                        <a href="tel:+7(917) 510-57-59" class="header__tel--link">+7 (917) 510-57-59</a>
+                        <span class="header__contact">Контакты:</span>
+                        <a class="header__tel" href="tel:+7(917) 510-57-59">+7 (917) 510-57-59</a>
                     </div>
                 </div>
-                <a href="#" data-toggle="modal" class="header__cart">
-                    <span class="header__cart--title">Корзина</span>
+                <a class="header__cart" href="#" data-toggle="modal">
+                    <span class="header__cart-title">Корзина</span>
                     <div class="header__border"></div>
                     <div class="header__block">
-                        <span class="header__cart--count">0</span>
+                        <span class="cart__count">0</span>
                     </div>
                 </a>
             </div>
         </div>
-        <!-- End header -->
     </header>
 
     <main class="page">
         <section class="conditions">
             <div class="container">
                 <a class="button__back" href="index.html">
-                    <div class="condtions__wrapp">
+                    <div class="conditions__return">
                         <svg width="26" class="products__svg" height="26" viewBox="0 0 26 26" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <circle cx="13" cy="13" r="13" fill="url(#paint0_linear_8362_1137)" />
@@ -148,7 +145,6 @@
                                     замечания или предложения, то <br> обязательно сообщайте их нам
                                 </p>
                             </div>
-
                             <button class="accordion__title">Реквизиты</button>
                             <div class="accordion__description">
                                 <p class="accordion__sub-text">Мы очень внимательно следим за качеством нашей работы,
@@ -159,21 +155,20 @@
                             </div>
                         </div>
                     </div>
-                    <img src="images/map-two.jpg" class="conditions__image" alt="conditions-image">
+                    <img class="conditions__image" src="images/map-two.jpg" alt="conditions-image">
                 </div>
-                <div class="conditions__column">
-                    <div class="conditions_inner">
-                        <span class="conditions__time__delivery">График работы доставки: <br> <span
+                <div class="conditions__wrap">
+                    <div class="conditions__block">
+                        <span class="conditions__sub-title">График работы доставки: <br> <span
                                 class="conditions__time">с 10:00-21:00</span>
                         </span>
-                        <span class="conditions__time__delivery">График работы кафе: <br> <span
-                                class="conditions__time">
+                        <span class="conditions__sub-title">График работы кафе: <br> <span class="conditions__time">
                                 с 08:00-21:00</span>
                         </span>
                     </div>
                 </div>
                 <div class="conditions__order">
-                    <h3 class="conditions__order__title">Минимальный заказ:</h3>
+                    <h3 class="conditions__order-title">Минимальный заказ:</h3>
                     <p class="conditions__desc">
                         Бесплатная доставка пешим курьером при сумме заказа от 400 ₽ <br>
                         Доставка оператором такси от любой суммы заказа - по тарифам <br>
@@ -192,51 +187,50 @@
                     <h1 class="footer__title">Logos</h1>
                     <nav class="footer__nav">
                         <ul class="footer__list">
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">© ООО СК «АПШЕРОН» <br> Все права
+                            <li class="footer__items">
+                                <a class="footer__link" href="#">© ООО СК «АПШЕРОН» <br> Все права
                                     защищены.
                                     2010-2020</a>
                             </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__link footer--link">Пользовательское
+                            <li class="footer__items">
+                                <a class="footer__link footer--link" href="#">Пользовательское
                                     соглашение</a>
                             </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__link footer--link">Карта сайта</a>
+                            <li class="footer__items">
+                                <a class="footer__link footer--link" href="#">Карта сайта</a>
                             </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__link footer--link">Политика
+                            <li class="footer__items">
+                                <a class="footer__link footer--link" href="#">Политика
                                     конфиденциальности</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
-                <nav class="footer__wrap">
-                    <ul class="footer__center">
-                        <li class="footer--items">
-                            <a href="#" class="footer__links footer--modificatorr">О ресторане</a>
+                <nav class="footer__navigation">
+                    <ul class="footer__inner">
+                        <li class="footer__item">
+                            <a class="footer__links" href="#">О ресторане</a>
                         </li>
-                        <li class="footer--items">
-                            <a href="conditions.html" class="footer__links footer--modificatorr">Условия
+                        <li class="footer__item">
+                            <a class="footer__links" href="conditions.html">Условия
                                 доставки</a>
                         </li>
-                        <li class="footer--items">
-                            <a href="#" class="footer__links footer--modificatorr">Возврат
+                        <li class="footer__item">
+                            <a class="footer__links" href="#">Возврат
                                 товара</a>
                         </li>
-                        <li class="footer--items">
-                            <a href="promo.html" class="footer__links footer--modificatorr">Акции</a>
+                        <li class="footer__item">
+                            <a class="footer__links" href="promo.html">Акции</a>
                         </li>
                     </ul>
                 </nav>
             </div>
             <div class="button__left">
                 <a href="#">
-                    <img src="images/arrow-up.png" alt="arrow-up" class="arrow-up">
+                    <img class="arrow-up" src="images/arrow-up.png" alt="arrow-up">
                 </a>
             </div>
         </div>
-        <!-- End footer -->
     </footer>
 
     <div class="modal">

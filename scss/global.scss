@@ -2,21 +2,50 @@
 @import "vars";
 @import "fonts";
 @import "reset";
+@import "media"; 
+@import "index";
 
 // Components
-@import "header.html";
-@import "footer.html";
+@import "header";
+@import "footer";
 
 // Pages
-@import "index.html";
 
 
 html,
 body {
+    font-family: "Gilroy", sans-serif;
+    scroll-behavior: smooth;
     height: 100%;
 }
 
-.wrapper {
+.container {
     max-width: 1140px;
     margin: 0 auto;
+}
+
+.inner_wrapper {
+    max-width: 1360px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.inner-wrapper {
+    max-width: 1209px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.inner__wrapper {
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.cart-wrapper {
+    max-width: 1197px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
 }
