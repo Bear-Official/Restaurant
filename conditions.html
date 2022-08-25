@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Restaurant</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="description" content="Web Development">
+    <meta name="keywords" content="HTML, CSS, JS">
+    <meta name="author" content="Bear Official">
+    <link rel="icon" type="/image/png" sizes="32x32" href="favicon/favicon.ico">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="libs/font awesome/all.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <button class="menu__button">
+                    <nav class="footer__nav">
+                        <input type="checkbox" id="active">
+                        <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+                        <div class="wrapper menu--wrapper">
+                            <ul class="footer__center">
+                                <li class="footer--items">
+                                    <a href="#" class="footer__links footer--modificatorr">О ресторане</a>
+                                </li>
+                                <li class="footer--items">
+                                    <a href="conditions.html" class="footer__links footer--modificatorr">Условия
+                                        доставки</a>
+                                </li>
+                                <li class="footer--items">
+                                    <a href="order.html" class="footer__links footer--modificatorr">Возврат
+                                        товара</a>
+                                </li>
+                                <li class="footer--items ">
+                                    <a href="promo.html" class="footer__links footer--modificatorr">Акции</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </button>
+                <picture>
+                    <a href="index.html" class="header__link">
+                        <h1 class="header__title ">Logos</h1>
+                    </a>
+                </picture>
+                <form action="#" class="header__form">
+                    <img src="images/Location.svg" alt="Location" class="header__img">
+                    <input type="text" placeholder="Введите адрес доставки" name="search" class="header__input">
+                    <button type="submit" class="header__button"><img src="images/Search.png" alt="search"
+                            class="header__search"></button>
+                </form>
+                <div class="header__contacts">
+                    <img src="images/phone.png" alt="phone" class="header__phone">
+                    <div class="header__items">
+                        <span class="header--contact">Контакты:</span>
+                        <a href="tel:+7(917) 510-57-59" class="header__tel--link">+7 (917) 510-57-59</a>
+                    </div>
+                </div>
+                <a href="#" data-toggle="modal" class="header__cart">
+                    <span class="header__cart--title">Корзина</span>
+                    <div class="header__border"></div>
+                    <div class="header__block">
+                        <span class="header__cart--count">0</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- End header -->
+    </header>
+
+    <main class="page">
+        <section class="conditions">
+            <div class="container">
+                <a class="button__back" href="index.html">
+                    <div class="condtions__wrapp">
+                        <svg width="26" class="products__svg" height="26" viewBox="0 0 26 26" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="13" cy="13" r="13" fill="url(#paint0_linear_8362_1137)" />
+                            <path
+                                d="M9.46967 12.4697C9.17678 12.7626 9.17678 13.2374 9.46967 13.5303L14.2426 18.3033C14.5355 18.5962 15.0104 18.5962 15.3033 18.3033C15.5962 18.0104 15.5962 17.5355 15.3033 17.2426L11.0607 13L15.3033 8.75736C15.5962 8.46447 15.5962 7.98959 15.3033 7.6967C15.0104 7.40381 14.5355 7.40381 14.2426 7.6967L9.46967 12.4697ZM11 12.25L10 12.25L10 13.75L11 13.75L11 12.25Z"
+                                fill="white" />
+                            <defs>
+                                <linearGradient id="paint0_linear_8362_1137" x1="1.25806" y1="1.47727" x2="29.0993"
+                                    y2="14.4163" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#618967" />
+                                    <stop offset="1" stop-color="#72A479" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="back-button">Вернуться назад</span>
+                    </div>
+                </a>
+                <div class="inner-wrapper">
+                    <h1 class="conditions__title">Условия доставки</h1>
+                </div>
+                <div class="conditions__inner">
+                    <div class="conditions__map">
+                        <div class="conditions__accordion">
+                            <button class="accordion__title">У наших курьеров всегда должна быть сдача!</button>
+                            <div class="accordion__description">
+                                <p class="accordion__sub-text">Мы очень внимательно следим за качеством нашей работы,
+                                    поэтому, <br> если у вас будут
+                                    какие-либо
+                                    замечания или предложения, то <br> обязательно сообщайте их нам
+                                </p>
+                            </div>
+                            <button class="accordion__title">Вам что-то не довезли?</button>
+                            <div class="accordion__description">
+                                <p class="accordion__sub-text">Мы очень внимательно следим за качеством нашей работы,
+                                    поэтому, <br> если у вас будут
+                                    какие-либо
+                                    замечания или предложения, то <br> обязательно сообщайте их нам
+                                </p>
+                            </div>
+
+                            <button class="accordion__title">Не понравился продукт?</button>
+                            <div class="accordion__description">
+                                <p class="accordion__sub-text">Мы очень внимательно следим за качеством нашей работы,
+                                    поэтому, <br> если у вас будут
+                                    какие-либо
+                                    замечания или предложения, то <br> обязательно сообщайте их нам
+                                </p>
+                            </div>
+                            <button class="accordion__title">Если появились замечания</button>
+                            <div class="accordion__description">
+                                <p class="accordion__sub-text">Мы очень внимательно следим за качеством нашей работы,
+                                    поэтому, <br> если у вас будут
+                                    какие-либо
+                                    замечания или предложения, то <br> обязательно сообщайте их нам
+                                </p>
+                            </div>
+
+                            <button class="accordion__title">Оплата Visa, MasterCard и МИР</button>
+                            <div class="accordion__description">
+                                <p class="accordion__sub-text">Мы очень внимательно следим за качеством нашей работы,
+                                    поэтому, <br> если у вас будут
+                                    какие-либо
+                                    замечания или предложения, то <br> обязательно сообщайте их нам
+                                </p>
+                            </div>
+
+                            <button class="accordion__title">Реквизиты</button>
+                            <div class="accordion__description">
+                                <p class="accordion__sub-text">Мы очень внимательно следим за качеством нашей работы,
+                                    поэтому, <br> если у вас будут
+                                    какие-либо
+                                    замечания или предложения, то <br> обязательно сообщайте их нам
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/map-two.jpg" class="conditions__image" alt="conditions-image">
+                </div>
+                <div class="conditions__column">
+                    <div class="conditions_inner">
+                        <span class="conditions__time__delivery">График работы доставки: <br> <span
+                                class="conditions__time">с 10:00-21:00</span>
+                        </span>
+                        <span class="conditions__time__delivery">График работы кафе: <br> <span
+                                class="conditions__time">
+                                с 08:00-21:00</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="conditions__order">
+                    <h3 class="conditions__order__title">Минимальный заказ:</h3>
+                    <p class="conditions__desc">
+                        Бесплатная доставка пешим курьером при сумме заказа от 400 ₽ <br>
+                        Доставка оператором такси от любой суммы заказа - по тарифам <br>
+                        перевозчика.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__box">
+                    <h1 class="footer__title">Logos</h1>
+                    <nav class="footer__nav">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">© ООО СК «АПШЕРОН» <br> Все права
+                                    защищены.
+                                    2010-2020</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link footer--link">Пользовательское
+                                    соглашение</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link footer--link">Карта сайта</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link footer--link">Политика
+                                    конфиденциальности</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <nav class="footer__wrap">
+                    <ul class="footer__center">
+                        <li class="footer--items">
+                            <a href="#" class="footer__links footer--modificatorr">О ресторане</a>
+                        </li>
+                        <li class="footer--items">
+                            <a href="conditions.html" class="footer__links footer--modificatorr">Условия
+                                доставки</a>
+                        </li>
+                        <li class="footer--items">
+                            <a href="#" class="footer__links footer--modificatorr">Возврат
+                                товара</a>
+                        </li>
+                        <li class="footer--items">
+                            <a href="promo.html" class="footer__links footer--modificatorr">Акции</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="button__left">
+                <a href="#">
+                    <img src="images/arrow-up.png" alt="arrow-up" class="arrow-up">
+                </a>
+            </div>
+        </div>
+        <!-- End footer -->
+    </footer>
+
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <img src="images/illustration.png" class="modal__img" alt="illustration">
+            <a href="#" class="modal__btn">
+                <img srcimages/btn-close.png" alt="btn-close" class="modal__close">
+            </a>
+            <span class="modal__text">КОРЗИНА ПУСТАЯ</span>
+            <button type="submit" class="modal__button">Посмотреть меню</button>
+        </div>
+    </div>
+
+    <script>
+        var accorion = document.getElementsByClassName("accordion__title");
+
+        for (let i = 0; i < accorion.length; i++) {
+            accorion[i].addEventListener("click", function () {
+                this.classList.toggle("open");
+                var accordion__panel = this.nextElementSibling;
+                if (accordion__panel.style.maxHeight) {
+                    accordion__panel.style.maxHeight = null;
+                } else {
+                    accordion__panel.style.maxHeight = accordion__panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+    <script src="javascript/main.min.js"></script>
+    <script src="javascript/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Restaurant</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="description" content="Web Development">
+    <meta name="keywords" content="HTML, CSS, JS">
+    <meta name="author" content="Bear Official">
+    <link rel="icon" type="/image/png" sizes="32x32" href="favicon/favicon.ico">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="libs/font awesome/all.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <button class="menu__button">
+                    <nav class="footer__nav">
+                        <input type="checkbox" id="active">
+                        <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+                        <div class="wrapper menu--wrapper">
+                            <ul class="footer__center">
+                                <li class="footer--items">
+                                    <a href="#" class="footer__links footer--modificatorr">О ресторане</a>
+                                </li>
+                                <li class="footer--items">
+                                    <a href="conditions.html" class="footer__links footer--modificatorr">Условия
+                                        доставки</a>
+                                </li>
+                                <li class="footer--items">
+                                    <a href="order.html" class="footer__links footer--modificatorr">Возврат
+                                        товара</a>
+                                </li>
+                                <li class="footer--items ">
+                                    <a href="promo.html" class="footer__links footer--modificatorr">Акции</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </button>
+                <picture>
+                    <a href="index.html" class="header__link">
+                        <h1 class="header__title ">Logos</h1>
+                    </a>
+                </picture>
+                <form action="#" class="header__form">
+                    <img src="images/Location.svg" alt="Location" class="header__img">
+                    <input type="text" placeholder="Введите адрес доставки" name="search" class="header__input">
+                    <button type="submit" class="header__button"><img src="images/Search.png" alt="search"
+                            class="header__search"></button>
+                </form>
+                <div class="header__contacts">
+                    <img src="images/phone.png" alt="phone" class="header__phone">
+                    <div class="header__items">
+                        <span class="header--contact">Контакты:</span>
+                        <a href="tel:+7(917) 510-57-59" class="header__tel--link">+7 (917) 510-57-59</a>
+                    </div>
+                </div>
+                <a href="#" data-toggle="modal" class="header__cart">
+                    <span class="header__cart--title">Корзина</span>
+                    <div class="header__border"></div>
+                    <div class="header__block">
+                        <span class="cart__count">0</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- End header -->
+    </header>
+
+    <main class="page">
+        <!-- Start Chechout -->
+        <section class="checkout">
+            <div class="checkout__center">
+                <div class="chechout__box">
+                    <div class="inner__wrapper">
+                        <a href="/index.html">
+                            <img src="images/check-arrow.png" class="checkout__img" alt="check-arrow">
+                            <span class="checkout__title">к выбору блюда</span>
+                        </a>
+                        <div class="checkout__block">
+                            <h1 class="checkout__header">КОРЗИНА</h1>
+                            <div class="checkout__product checkout--inline">(в корзине <span
+                                    class="cart__count cart__count--checkout">0</span>
+                                товара)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-wrapper">
+                    </div>
+                    <!-- End Checkout -->
+        </section>
+        <section class="carousel">
+            <div class="carousel__box">
+                <div class="cart-wrapper">
+                    <h1 class="carousel__title checkout--title">ДОБАВИТЬ К ЗАКАЗУ</h1>
+                    <div class="cart-inner">
+                        <div class="checkout__item">
+                            <img src="images/meat.jpg" class="kitchen__img" alt="">
+                            <div class="checkout__wrap">
+                                <h3 class="checkout_title">КВАС АНАНАСОВЫЙ</h3>
+                                <div class="checkout_center">
+                                    <span class="checkout__sub__text">Добавить</span>
+                                    <img src="images/button.png" class="checkout__image" alt="">
+                                    <span class="checkout__rate">1640 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkout__item">
+                            <img src="images/meat.jpg" class="kitchen__img" alt="">
+                            <div class="checkout__wrap">
+                                <h3 class="checkout_title">КВАС АНАНАСОВЫЙ</h3>
+                                <div class="checkout_center">
+                                    <span class="checkout__sub__text">Добавить</span>
+                                    <img src="images/button.png" class="checkout__image" alt="">
+                                    <span class="checkout__rate">1640 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkout__item">
+                            <img src="images/meat.jpg" class="kitchen__img" alt="">
+                            <div class="checkout__wrap">
+                                <h3 class="checkout_title">КВАС АНАНАСОВЫЙ</h3>
+                                <div class="checkout_center">
+                                    <span class="checkout__sub__text">Добавить</span>
+                                    <img src="images/button.png" class="checkout__image" alt="">
+                                    <span class="checkout__rate">1640 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkout__item">
+                            <img src="images/meat.jpg" class="kitchen__img" alt="">
+                            <div class="checkout__wrap">
+                                <h3 class="checkout_title">КВАС АНАНАСОВЫЙ</h3>
+                                <div class="checkout_center">
+                                    <span class="checkout__sub__text">Добавить</span>
+                                    <img src="images/button.png" class="checkout__image" alt="">
+                                    <span class="checkout__rate">1640 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check-order__wrap">
+                        <div class="check__order">
+                            <div class="check__order__inner">
+                                <div class="check__order__content">
+                                    <h2 class="check__order-title">
+                                        Итого:
+                                        <span class="check__order__color">500 ₽</span>
+                                    </h2>
+                                    <p class="check__order__text">
+                                        До бесплатной доставки не хватет:
+                                        <span class="check__order-color">100 ₽</span>
+                                    </p>
+                                    <span class="check__order__description">Минимальная сума заказа 1500
+                                        ₽</span>
+                                </div>
+                                <a href="order.html" class="check__order__button" type="submit">
+                                    Оформить заказ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Start Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__box">
+                    <h1 class="footer__title">Logos</h1>
+                    <nav class="footer__nav">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">© ООО СК «АПШЕРОН» <br> Все права
+                                    защищены.
+                                    2010-2020</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link footer--link">Пользовательское
+                                    соглашение</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link footer--link">Карта сайта</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link footer--link">Политика
+                                    конфиденциальности</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <nav class="footer__wrap">
+                    <ul class="footer__center">
+                        <li class="footer--items">
+                            <a href="#" class="footer__links footer--modificatorr">О ресторане</a>
+                        </li>
+                        <li class="footer--items">
+                            <a href="conditions.html" class="footer__links footer--modificatorr">Условия
+                                доставки</a>
+                        </li>
+                        <li class="footer--items">
+                            <a href="#" class="footer__links footer--modificatorr">Возврат
+                                товара</a>
+                        </li>
+                        <li class="footer--items">
+                            <a href="promo.html" class="footer__links footer--modificatorr">Акции</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="button__left">
+                <a href="#">
+                    <img src="images/arrow-up.png" alt="arrow-up" class="arrow-up">
+                </a>
+            </div>
+        </div>
+        <!-- End footer -->
+    </footer>
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <img src="images/illustration.png" class="modal__img" alt="illustration">
+            <a href="#" class="modal__btn">
+                <img srcimages/btn-close.png" alt="btn-close" class="modal__close">
+            </a>
+            <span class="modal__text">КОРЗИНА ПУСТАЯ</span>
+            <button type="submit" class="modal__button">Посмотреть меню</button>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="javascript/main.min.js"></script>
+    <script src="javascript/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+// Settings
+@import "vars";
+@import "fonts";
+@import "reset";
+
+// Components
+@import "header.html";
+@import "footer.html";
+
+// Pages
+@import "index.html";
+
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+}

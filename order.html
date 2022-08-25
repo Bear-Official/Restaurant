@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Restaurant</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="description" content="Web Development">
+    <meta name="keywords" content="HTML, CSS, JS">
+    <meta name="author" content="Bear Official">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon.ico">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="libs/font awesome/all.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <button class="menu__button">
+                    <nav class="footer__nav">
+                        <input type="checkbox" id="active">
+                        <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+                        <div class="wrapper menu--wrapper">
+                            <ul class="footer__center">
+                                <li class="footer--items">
+                                    <a href="#" class="footer__links footer--modificatorr">О ресторане</a>
+                                </li>
+                                <li class="footer--items">
+                                    <a href="conditions.html" class="footer__links footer--modificatorr">Условия
+                                        доставки</a>
+                                </li>
+                                <li class="footer--items">
+                                    <a href="order.html" class="footer__links footer--modificatorr">Возврат
+                                        товара</a>
+                                </li>
+                                <li class="footer--items ">
+                                    <a href="promo.html" class="footer__links footer--modificatorr">Акции</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </button>
+                <picture>
+                    <a href="index.html" class="header__link">
+                        <h1 class="header__title ">Logos</h1>
+                    </a>
+                </picture>
+                <form action="#" class="header__form">
+                    <img src="images/Location.svg" alt="Location" class="header__img">
+                    <input type="text" placeholder="Введите адрес доставки" name="search" class="header__input">
+                    <button type="submit" class="header__button"><img src="images/Search.png" alt="search"
+                            class="header__search"></button>
+                </form>
+                <div class="header__contacts">
+                    <img src="images/phone.png" alt="phone" class="header__phone">
+                    <div class="header__items">
+                        <span class="header--contact">Контакты:</span>
+                        <a href="tel:+7(917) 510-57-59" class="header__tel--link">+7 (917) 510-57-59</a>
+                    </div>
+                </div>
+                <a href="#" data-toggle="modal" class="header__cart">
+                    <span class="header__cart--title">Корзина</span>
+                    <div class="header__border"></div>
+                    <div class="header__block">
+                        <span class="header__cart--count">0</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- End header -->
+    </header>
+    <main class="page">
+        <!-- Start Navigation -->
+        <div class="navigation">
+            <div class="container">
+                <div class="navigation__box">
+                    <nav class="nav__navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__item">
+                                <a href="#colds__snacks" class="navigation__links">Холодные закуски</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#hot__snacks" class="navigation__links">Горячие закуски</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#meat" class="navigation__links">Мясные блюда</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__links">Супы</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__links">Рыбные блюда</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__links">Гриль меню</a>
+                            </li>
+
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__links">Фирменные блюда</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__links">Напитки</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- End Navigation -->
+        </div>
+        <!-- Start order -->
+        <section class="order">
+            <div class="container">
+                <div class="order__box">
+                    <a href="index.html">
+                        <img src="images/Arrow-order.png" class="order__arrow" alt="Arrow-order">
+                        <span class="order__back">в корзину</span>
+                    </a>
+                    <h1 class="order__header">Оформление заказа</h1>
+                    <div class="order__out">
+                        <div class="order__flex">
+                            <div class="order-wrap">
+                                <h1 class="order-header">Сегодня мы уже не доставляем.</h1>
+                                <span class="order-out__title">Заказы принимаем до 20:50, доставляем с 8:30 до
+                                    21:30</span>
+                                <img src="images/out-of-timepng.png" class="" alt="">
+                            </div>
+                            <img src="images/sleep.png" class="sleep" alt="">
+                        </div>
+
+                    </div>
+                    <div class="order__block">
+                        <h2 class="order__title">1. Контактная информация</h2>
+                        <form action="#" class="order__form">
+                            <input class="order__input" type="text" placeholder="Имя*">
+                            <input class="order__input" type="text" placeholder="Телефон*">
+                        </form>
+                    </div>
+                    <div class="order__block order--block">
+                        <h2 class="order__title">2. Доставка</h2>
+                        <div class="order-livrary__block">
+                        </div>
+                        <div class="order__delivery">
+                        </div>
+                        <div class="livrary">
+                            <button class="button">Доставка</button>
+                            <button class="button active">Самовывоз</button>
+                        </div>
+                        <div class="order-block__livrary">
+                            <input class="order__input order--one" type="text" placeholder="Укажите улицу*">
+                            <input class="order__input order--two" type="text" placeholder="Номер дома*">
+                            <input class="order__input order--three" type="text" placeholder="№ квартиры/офиса*">
+                            <input class="order__input order--four" type="text" placeholder="Подъезд*">
+                            <input class="order__input order--four" type="text" placeholder="Этаж*">
+                            <input class="order__input order--five" type="text" placeholder="Комментарий*">
+                        </div>
+                        <h2 class="order__title order--title">Выберите ресторан</h2>
+                        <select name="order" class="order__drop__down">
+                            <option value="" id="order__choose">Выберите ресторан</option>
+                            <option value="">ресторан1</option>
+                            <option value="">ресторан2</option>
+                            <option value="">ресторан3</option>
+                        </select>
+                    </div>
+                    <div class="order__block order--modificator">
+                        <h2 class="order__title">3. Оплатить</h2>
+                        <div class="livrary">
+                            <div class="livrary__grid">
+                                <button class="button btn button--secondd">Оплата онлайн</button>
+                                <button class="button button--secondd btn--second active">Курьеру картой</button>
+                                <button class="button btn button--secondd">Наличными</button>
+                                <img src="images/clock.png" class="clock" alt="">
+                                <span class="livrary__time">Доставим через 1 час 30 минут</span>
+                            </div>
+                        </div>
+                        <input class="order__input order--four" type="text" placeholder="Сдача с*">
+                    </div>
+                    <div class="when" id="when">
+                        <div class="when__block">
+                            <h2 class="order__title">4. Когда доставить</h2>
+                            <div class="livrary">
+                                <button class="button active">В ближайшее время</button>
+                                <button class="button">Ко времени</button>
+                                <button class="button">Наличными</button>
+                            </div>
+                            <button class="sub__button" type="submit">
+                                Кол-во персон
+                                <span class="minus">-</span>
+                                <input class="when__input" type="text" value="1" />
+                                <span class="plus">+</span>
+                            </button>
+                            <div class="when__call">
+                                <h2 class="order__title">Хотите мы позвоним?</h2>
+                                <form class="when__form">
+                                    <input id="color1" class="when__inputt" type="radio" id="html" name="fav_language"
+                                        value="HTML">
+                                    <label class="when__label" for="recall">Не перезванивать</label><br>
+                                    <input type="radio" id="css" name="fav_language" value="operator">
+                                    <label class="when__operator" for="operator">Потребуется звонок
+                                        оператора</label><br>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="agreement">
+                            <div class="agreement__block">
+                                <form class="agreement__form" action="order.html">
+                                    <input type="checkbox" class="agreement agreement--mod">
+                                    <p class="agreement__title">Я согласен на обработку моих перс. данных в
+                                        соответствии
+                                        с <span class="agreement__txt">Условиями</span></p>
+                                    <button class="agreement__btn" type="submit">Оформить заказ</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Start Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__box">
+                    <h1 class="footer__title">Logos</h1>
+                    <nav class="footer__nav">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">© ООО СК «АПШЕРОН» <br> Все права
+                                    защищены.
+                                    2010-2020</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link footer--link">Пользовательское
+                                    соглашение</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link footer--link">Карта сайта</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link footer--link">Политика
+                                    конфиденциальности</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <nav class="footer__wrap">
+                    <ul class="footer__center">
+                        <li class="footer--items">
+                            <a href="#" class="footer__links footer--modificatorr">О ресторане</a>
+                        </li>
+                        <li class="footer--items">
+                            <a href="conditions.html" class="footer__links footer--modificatorr">Условия
+                                доставки</a>
+                        </li>
+                        <li class="footer--items">
+                            <a href="#" class="footer__links footer--modificatorr">Возврат
+                                товара</a>
+                        </li>
+                        <li class="footer--items">
+                            <a href="promo.html" class="footer__links footer--modificatorr">Акции</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="button__left">
+                <a href="#">
+                    <img src="images/arrow-up.png" alt="arrow-up" class="arrow-up">
+                </a>
+            </div>
+        </div>
+        <!-- End footer -->
+    </footer>
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <img src="images/illustration.png" class="modal__img" alt="illustration">
+            <a href="#" class="modal__btn">
+                <img src="images/btn-close.png" alt="btn-close" class="modal__close">
+            </a>
+            <span class="modal__text">КОРЗИНА ПУСТАЯ</span>
+            <button type="submit" class="modal__button">Посмотреть меню</button>
+        </div>
+    </div>
+
+    <script src="javascript/main.min.js"></script>
+    <script src="javascript/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+</body>
+
+</html>
