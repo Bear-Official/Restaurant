@@ -1200,3 +1200,17 @@
         display: none;
     }
 }
+
+@media (max-width: 418px) {
+    .product {
+        &__inner {
+            flex-wrap: wrap !important;
+            padding: 9px !important;
+            overflow: static !important;
+            height: 100% !important;
+            margin-top: 20px !important;
+            justify-content: center !important;
+            width: 97% !important;
+        }
+    }
+}
